@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/linear_textout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+		<ImageView
+            android:id="@+id/but_back_1"
+            style="@style/Btn_Back_RelativeLayout" />
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="账户信息"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+    
+
+	<LinearLayout
+	    android:background="@drawable/active_back"
+	    android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="用户名:"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="@drawable/text_back"
+            />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:background="@drawable/active_back"
+	    android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="电	话:"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/user_tel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="@drawable/text_back"
+            />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:background="@drawable/active_back"
+	    android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="部	门:"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/user_department"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="@drawable/text_back"
+            />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/user_layout_1"
+	    android:background="@drawable/active_back"
+	    android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="创建时间:"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/user_createtime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:background="@drawable/text_back"
+            />
+	</LinearLayout>
+	
+	
+	 <LinearLayout
+	    android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_change"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_press_style"
+            android:gravity="center"
+            android:text="确认修改"
+            android:textColor="@color/white" />
+    </LinearLayout>
+	
+	
+		
+		
+	
+	
+	
+	
+            
+    
+    
+
+</LinearLayout>

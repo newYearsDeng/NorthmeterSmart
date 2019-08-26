@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 空调界面模式，风速选择的条目点击效果 -->    
+
+    <item  android:state_focused="true" android:state_pressed="true">
+        <shape>
+            <gradient android:centerColor="#C9CACA" android:endColor="#C9CACA" android:startColor="#C9CACA" />
+        </shape>
+    </item>
+    
+    <!-- 触摸模式下单击时的背景图片 -->
+    <item  android:state_focused="false" android:state_pressed="true">
+        <shape>
+            <gradient android:centerColor="#C9CACA" android:endColor="#C9CACA" android:startColor="#C9CACA" />
+        </shape>
+    </item>
+    <!-- 选中时的图片背景 -->
+    
+    <item  android:state_selected="true">
+        <shape>
+            <gradient android:centerColor="#C9CACA" android:endColor="#C9CACA" android:startColor="#C9CACA" />
+        </shape>
+    </item>
+    
+    <!-- 获得焦点时的图片背景 -->
+    <item  android:state_focused="true">
+        <shape>
+            <gradient android:centerColor="#C9CACA" android:endColor="#C9CACA" android:startColor="#C9CACA" />
+
+        </shape>
+    </item>
+    
+    <!-- 默认时的背景图片 -->
+    <item><shape>
+            <gradient android:centerColor="@color/white" android:endColor="@color/white" android:startColor="@color/white" />
+        </shape></item>
+
+</selector>

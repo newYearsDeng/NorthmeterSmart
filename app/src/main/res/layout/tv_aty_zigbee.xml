@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background" >
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <!--  android:background="@drawable/new_back_ground" -->
+        
+
+        <TextView
+            android:id="@+id/textView_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvtext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/button1"
+            style="@style/Btn_Back_RelativeLayout" />
+        <Button
+            android:id="@+id/put_button_1"
+            style="@style/put_butont"
+            android:background="@drawable/button_put_style"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/Linearlayout_zgb_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"  
+        android:layout_alignParentLeft="true" >
+
+        <RadioGroup
+            android:id="@+id/radio_Group2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_btn"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_0"
+                android:checked="true"
+               	style="@style/message_radiobtn"
+               	android:drawableTop="@drawable/tab_but_control_style"
+               	android:textColor="@drawable/tab_color_style"
+                android:text="主控" />
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                style="@style/message_radiobtn"
+                android:drawableTop="@drawable/tab_but_information_style"
+               	android:textColor="@drawable/tab_color_style"
+                android:text="信息" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+        
+
+
+</RelativeLayout>

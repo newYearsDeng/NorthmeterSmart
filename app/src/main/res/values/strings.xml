@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">微建筑能源</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="zhanghao">请输入帐号</string>
+    <string name="mima">请输入密码</string>
+    <string name="logintext">登录</string>
+    <string name="button_put">修改信息</string>
+    <string name="ydcl">用电策略</string>
+    <string name="title_activity_center_aty">CenterAty</string>
+    <string name="centertext">用户中心</string>
+    <string name="messagetext">电脑</string>
+    <string name="tvtext">电视</string>
+    <string name="backtext">返回</string>
+    <string name="addtitle">添加设备</string>
+    <string name="device_title">能耗分析</string>
+    <string name="device_viewpage_title1">电能占比</string>
+    <string name="device_viewpage_title2">节能排行</string>
+    <string name="text_name">16876413168@163.com</string>
+    <string name="text_date">10月17日</string>
+    <string name="title_activity_message_aty">MessageAty</string>
+    <string name="title_activity_add_aty">AddAty</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_device_aty">DeviceAty</string>
+    <string name="f1p1_t1">WiFi智能插座 W8001</string>
+    <string name="f1p1_t2">WiFi智能网关</string>
+    <string name="f1p1_t3">Zigbee智能插座</string>
+    <string name="f1p1_t3_1">Zigbee四路灯控</string>
+    <string name="f1p1_t4">Zigbee智能空调控制器</string>
+    <string name="f1p1_t5">以太网智能网关</string>
+    <string name="f1p1_t6">无线智能网关</string>
+    <string name="f1p1_t7">WiFi智能空调控制器</string>
+    <string name="f1p1_t8">Ⅱ型集中器</string>
+    <string name="f4p1_t1">电脑</string>
+    <string name="f4p1_t2">电视</string>
+    <string name="f4p1_t3">灯</string>
+    <string name="f4p1_t4">客厅电视机</string>
+    <string name="f4p1_t5">热水器</string>
+    <string name="f4p1_t6">饮水机</string>
+    <string name="f4p1_t7">电饭煲</string>
+    <string name="f4p1_t8">电风扇</string>
+    <string name="f4p1_t9">其他电器</string>
+    <string name="title_activity_tvaty">TVAty</string>
+    <string name="title_activity_machine_aty">MachineAty</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="dialog_qrcode_text">请扫描二维码以进行设备导入</string>
+    <string name="root_name">Root_Name</string>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item> <!--运行进度条时是否允许屏幕变暗  -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

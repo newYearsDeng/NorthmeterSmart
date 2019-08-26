@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+        android:id="@+id/ll_sex_man"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/air_choose_background" >
+
+        <TextView
+            android:id="@+id/hhh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="低风"
+            android:textColor="#727171"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:src="@drawable/air_difeng"/>
+    </LinearLayout>
+ 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#C9CACA" />
+ 
+    <LinearLayout
+        android:id="@+id/ll_sex_woman"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/air_choose_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="中风"
+            android:textColor="#727171"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/air_zhongfeng" />
+    </LinearLayout>
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#C9CACA" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/air_choose_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="高风"
+            android:textColor="#727171"
+            android:textSize="18sp" />
+        
+       <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/air_gaofeng" />
+    </LinearLayout>
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#C9CACA" />
+     
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/air_choose_background" >
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="自动"
+            android:textColor="#727171"
+            android:textSize="18sp" />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/air_zidong" />
+    </LinearLayout>
+ 
+ 
+</LinearLayout>

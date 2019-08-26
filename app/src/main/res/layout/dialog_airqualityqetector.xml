@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:background="@color/white" >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        />
+   
+    <LinearLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:alpha="0.95"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/menu_btn_1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:background="@drawable/main_menu_press_upstyle"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_marginLeft="15dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="PM1.0"
+	            android:textColor="@color/black"
+	            android:textSize="15sp"
+	            />
+        </LinearLayout>
+       	<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_menu_line"/>
+       	
+       	
+         <LinearLayout
+            android:id="@+id/menu_btn_2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:background="@drawable/main_menu_press_middlestyle"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="PM2.5"
+	            android:textColor="@color/black"
+	            android:textSize="15sp"
+	            />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_menu_line"/>
+        <LinearLayout
+            android:id="@+id/menu_btn_3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:background="@drawable/main_menu_press_middlestyle"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="PM10"
+	            android:textColor="@color/black"
+	            android:textSize="15sp"
+	            />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_menu_line"/>
+        
+        <LinearLayout
+            android:id="@+id/menu_btn_4"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:background="@drawable/main_menu_press_middlestyle"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="温度"
+	            android:textColor="@color/black"
+	            android:textSize="15sp"
+	            />
+        </LinearLayout>
+        
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_menu_line"/>
+        
+        <LinearLayout
+            android:id="@+id/menu_btn_5"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:background="@drawable/main_menu_press_middlestyle"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="湿度"
+	            android:textColor="@color/black"
+	            android:textSize="15sp"
+	            />
+        </LinearLayout>
+        
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_menu_line"/>
+          <LinearLayout
+            android:id="@+id/menu_btn_6"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:background="@drawable/main_menu_press_middlestyle"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="甲醛"
+	            android:textColor="@color/black"
+	            android:textSize="15sp"
+	            />
+        </LinearLayout>
+        
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_menu_line"/>
+         <LinearLayout
+            android:id="@+id/menu_btn_7"
+	        android:layout_width="fill_parent"
+	        android:layout_height="30dp"
+	        android:background="@drawable/main_menu_press_middlestyle"
+	        android:gravity="center"
+	        android:orientation="horizontal" >
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:text="CO2"
+	            android:textColor="@color/black"
+	            android:textSize="15sp"
+	            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

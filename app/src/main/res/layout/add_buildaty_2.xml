@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="top"
+    android:background="@drawable/new_img_background"
+    android:orientation="vertical"
+    android:weightSum="6" >
+    
+     <RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" >
+	
+	       <TextView
+	           android:id="@+id/textView_title_2"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_centerHorizontal="true"
+	           android:layout_centerVertical="true"
+	           android:text="注册"
+	           android:textAppearance="?android:attr/textAppearanceMedium"
+	           android:textColor="@color/white" />
+	
+	       <ImageView
+	           android:id="@+id/button_back"
+	           style="@style/Btn_Back_RelativeLayout" />
+	
+	   </RelativeLayout>    
+ 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+        	    
+  		   
+    
+            <LinearLayout  
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"
+                android:focusable="true"
+				android:focusableInTouchMode="true" >  
+  
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+                    
+                    <TableRow 
+                        android:id="@+id/tablerow_type" 
+                        android:visibility="gone"
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:background="@drawable/text_back"  
+                        android:paddingBottom="5.0dip"  
+                        android:paddingRight="5.0dp"
+                        android:gravity="center_vertical"
+                        android:paddingTop="5.0dip" >  
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.4"
+			                android:gravity="center"
+			                android:text="空调具体类型:"
+			                android:textSize="16sp"
+			                android:textColor="@color/white" />
+			             <RelativeLayout
+				            android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.7"
+			                android:background="@drawable/text_back"
+				            android:gravity="left|center_vertical" >
+					            <TextView
+					                android:id="@+id/text_air_type"
+					                android:layout_width="fill_parent"
+					                android:layout_height="40dp"
+					                android:gravity="center"
+					                android:text="格力定频空调"
+					                android:ems="10"
+					                android:textSize="16sp"
+					                android:textColor="@color/white"
+					                android:background="@drawable/button_press_style"
+					                android:imeOptions="flagNoFullscreen"
+				                	android:inputType="textPersonName" />
+			
+					            <ImageView
+					                android:layout_width="wrap_content"
+					                android:layout_height="wrap_content"
+					                android:layout_alignParentRight="true"
+					                android:layout_marginRight="10dp"
+					                android:layout_centerVertical="true"
+					                android:src="@drawable/spinner_down_style" />
+			
+						</RelativeLayout>
+			            
+                    </TableRow>
+                    
+                    
+                    
+                    
+                    <TableRow 
+                        android:id="@+id/tablerow_gateway" 
+                        android:visibility="visible"
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:background="@drawable/text_back"  
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="5.0dip"
+                        android:paddingRight="5.0dp"  
+                        android:gravity="center_vertical"
+                        android:paddingTop="5.0dip" >  
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.4"
+			                android:gravity="center"
+			                android:text="网关设备号码:"
+			                android:textSize="16sp"
+			                android:textColor="@color/white" />  
+			                
+			             <EditText
+			                android:id="@+id/edittext_gateway_num"
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.7"
+			                android:gravity="center"
+			                android:textSize="16sp"
+			                android:hint=""
+			                android:background="@drawable/text_back"
+			                android:textColor="@color/white" />
+			             
+                    </TableRow>
+                    
+                    <TableRow  
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:background="@drawable/text_back"  
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="5.0dip"
+                        android:paddingRight="5.0dp"  
+                        android:gravity="center_vertical"
+                        android:paddingTop="5.0dip" >  
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.4"
+			                android:gravity="center"
+			                android:text="自定义设备名:"
+			                android:textSize="16sp"
+			                android:textColor="@color/white" />  
+			                
+			             <EditText
+			                android:id="@+id/edittext_name"
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.7"
+			                android:gravity="center"
+			                android:textSize="16sp"
+			                android:hint=""
+			                android:background="@drawable/text_back"
+			                android:textColor="@color/white" />
+			             	<!-- android:inputType="numberDecimal" 限制输入类型为数字-->
+                    </TableRow>
+                    
+                    <TableRow  
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:background="@drawable/text_back"  
+                        android:layout_marginTop="20dp"
+                        android:paddingBottom="5.0dip"
+                        android:paddingRight="5.0dp"  
+                        android:gravity="center_vertical"
+                        android:paddingTop="5.0dip" >  
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.4"
+			                android:gravity="center"
+			                android:text="绑定的建筑ID:"
+			                android:textSize="16sp"
+			                android:textColor="@color/white" />  
+			                
+			             <EditText
+			                android:id="@+id/edittext_buildid"
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.7"
+			                android:gravity="center"
+			                android:textSize="16sp"
+			                android:hint=""
+			                android:inputType="numberDecimal"
+			                android:background="@drawable/text_back"
+			                android:textColor="@color/white" />
+			             
+                    </TableRow>
+ 
+                </TableLayout>  
+            </LinearLayout>  
+                 
+            
+             <LinearLayout  
+                android:layout_marginTop="50dp"
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >   
+               <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+ 
+                     <TableRow  
+                        android:layout_height="40.0dp" 
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_width="fill_parent"  
+                        android:gravity="center_horizontal"
+                        android:background="@drawable/text_back">   
+						<Button
+			                android:id="@+id/but_next"
+			                android:layout_width="wrap_content"
+			                android:layout_height="40dp"
+			                android:gravity="center"
+			                android:background="@drawable/button_press_style"
+			                android:ems="10"
+			                android:text="完成"
+			                android:textColor="@color/white"
+			                android:imeOptions="flagNoFullscreen"
+			                android:inputType="textPersonName"
+			                android:textSize="16sp" />
+                    </TableRow>  
+                </TableLayout>  
+            </LinearLayout>
+            
+
+                       
+            
+            
+   		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

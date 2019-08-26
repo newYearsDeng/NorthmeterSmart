@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_ground_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+         <CheckBox
+	        android:id="@+id/display_select"
+	        android:layout_width="15dp"
+	        android:layout_height="15dp"
+	        android:visibility="gone"
+	        android:gravity="center"
+	        android:clickable="false"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/checkbox_select_style"
+	        android:focusable="false"
+	        android:button="@null" />
+		<TextView
+            android:id="@+id/text_metre"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white" />
+        
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white" />
+
+        
+         <TextView
+            android:id="@+id/descript_text"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white" />  
+
+    </LinearLayout>
+
+</LinearLayout>

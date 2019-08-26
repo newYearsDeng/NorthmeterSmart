@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#3695E5" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="定时控制"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/dskz_back"
+            style="@style/Btn_Back_RelativeLayout" />
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+        
+    	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+ 			<TextView
+ 			    android:id="@+id/tv_zhuangtai"
+ 			    android:layout_width="0dp"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_weight="1"
+ 			    android:gravity="left"
+ 			    android:textColor="#000000" />
+      
+        </LinearLayout>
+ 		
+    
+        
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" > 
+            <TextView
+                android:id="@+id/tv_text_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="延时控制"
+                android:textColor="#000000" />      
+        </LinearLayout>
+    
+    
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/tv_text_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="延时 "
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/tv_input_3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:text="0"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" >
+            </EditText>
+            <TextView
+                android:id="@+id/tv_text_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="分钟"
+                android:textColor="#000000" />
+            
+ 			<Spinner
+ 			    android:id="@+id/spinner"
+ 			    android:layout_width="0dp"
+ 			    android:layout_height="45dp"
+ 			    android:layout_weight="0.7"
+ 			    android:gravity="center"
+ 			    />
+
+            <Button
+                android:id="@+id/tv_button_2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_style"
+                android:ems="10"
+                android:gravity="center"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName"
+                android:text="设置" />
+
+        </LinearLayout>
+   
+        
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/tv_button_4"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_green_bg"
+            android:gravity="center"
+            android:text="电量清零"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

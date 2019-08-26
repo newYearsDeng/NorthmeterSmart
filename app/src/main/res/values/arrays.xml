@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="spinnerbarstyle">
+        <item>竖向功率柱形图</item>	  
+        <item>横向功率柱形图</item> 		
+	  	<item>竖向功率3D柱形图 </item>
+	  	<item>横向功率3D柱形图</item>
+	  	<item>竖向功率堆积柱形图 </item>
+	  	<item>横向功率堆积柱形图 </item>
+	  	<item>总电能占比图</item>
+    </string-array>
+    
+     <string-array name="type_select">
+        <item>电视</item>	  
+        <item>电脑</item> 		
+	  	<item>电灯 </item>
+	  	<item>电饭煲</item>
+	  	<item>电风扇</item>
+	  	<item>热水器 </item>
+	  	<item>饮水机</item>
+	  	<item>客厅电视机</item>
+	  	<item>其他电器</item>
+    </string-array>
+    
+    <string-array name="type_zgb_select">
+        <item>电视</item>	  
+        <item>电脑</item> 		
+	  	<item>电灯 </item>
+	  	<item>电饭煲</item>
+	  	<item>电风扇</item>
+	  	<item>热水器 </item>
+	  	<item>饮水机</item>
+	  	<item>客厅电视机</item>
+	  	<item>其他电器</item>
+	  	<item>网关</item>
+	  	<item>空调</item>
+    </string-array>
+    
+    <string-array name="type_air_select">
+        <item>格力定频空调</item>
+        <item>格力变频空调</item>	  
+        <item>美的空调</item>
+        <item>华凌空调</item>
+        <item>中央空调</item>	  		
+    </string-array>
+</resources>

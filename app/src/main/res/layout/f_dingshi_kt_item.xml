@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/active_back"
+    android:descendantFocusability="blocksDescendants" >
+<!-- android:background="@drawable/back_ground_color" -->
+    <CheckBox
+        android:id="@+id/chk_select"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/cricle_selector"
+        android:clickable="false"
+        android:button="@null"
+        android:text="@null" />
+     
+   <LinearLayout
+        android:id="@+id/layout_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/chk_select"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView
+	        android:id="@+id/txt_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="7:20"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/white"
+	        android:textSize="25sp" />
+
+    </LinearLayout>
+    
+   
+   <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/layout_time"
+        android:gravity="left"
+        android:orientation="vertical" >
+        
+	        
+	      <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@+id/txt_time"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	
+	       <TextView
+	            android:id="@+id/txt_1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:text="开机" />
+	         <TextView
+	            android:id="@+id/txt_2"
+	            android:layout_marginLeft="15dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:text="25" />
+	          <TextView
+	            android:id="@+id/txt_3"
+	            android:layout_marginLeft="15dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:text="模式" />
+	         <TextView
+	            android:id="@+id/txt_4"
+	            android:layout_marginLeft="15dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:text="风速" />
+	         <TextView
+	            android:id="@+id/txt_5"
+	            android:layout_marginLeft="15dp"
+	            android:layout_width="0dp"
+	            android:layout_height="0dp"
+	            android:textColor="@color/white"
+	            android:text="" />
+	         <TextView
+	            android:id="@+id/txt_6"
+	            android:layout_marginLeft="15dp"
+	            android:layout_width="0dp"
+	            android:layout_height="0dp"
+	            android:textColor="@color/white"
+	            android:text="" />
+	    </LinearLayout>
+	
+       <TextView
+	        android:id="@+id/txt_weekday"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:layout_width="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="0dp"
+	        android:layout_alignParentBottom="true"
+	        android:text="一,二,三,四,五,六,七"
+	        android:textColor="@color/white" />
+	        
+	    
+    </LinearLayout>
+
+
+</RelativeLayout>

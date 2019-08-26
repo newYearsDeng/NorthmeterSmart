@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:fillViewport="true">
+        <LinearLayout 
+     		android:paddingLeft="20dp"
+     		android:paddingRight="20dp"
+            android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:orientation="vertical"
+            >
+            <RelativeLayout
+		   	    android:layout_weight="1"
+		   	    android:layout_marginBottom="12dp"
+		   	    android:background="@drawable/content_background"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0dp">
+		        <TextView
+		            android:paddingLeft="10dp"
+		            android:paddingTop="5dp"
+		            android:id="@+id/title_total_12"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content" 
+		            android:text="最近12月用电情况"
+		            android:textColor="@color/white"
+		            />
+
+		        <com.github.mikephil.charting.charts.LineChart
+		            android:id="@+id/total_chart"
+		            android:layout_below="@+id/title_total_12"		           
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent" />
+
+        	</RelativeLayout>
+        
+        	<RelativeLayout
+	            android:layout_marginTop="10dp"
+	            android:background="@drawable/content_background"
+	            android:layout_weight="1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0dp">
+		        
+        	    <LinearLayout
+        	        android:paddingTop="2dp"
+					android:paddingRight="5dp"
+					android:paddingLeft="5dp"
+        	        android:id="@+id/linear_layout_1"
+        	        android:layout_width="match_parent"
+        	        android:layout_height="wrap_content"
+        	        >
+        	        <TextView
+			            android:padding="5dp"	
+			            android:layout_marginBottom="5dp"		            
+			            android:id="@+id/title_now"
+			            android:layout_weight="1"
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content" 
+			            android:text="本月用电"
+			            android:textColor="@color/white"
+		            />
+        	        <RelativeLayout
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+			            android:layout_width="0dp"
+			            android:padding="5dp"
+			            android:layout_marginBottom="5dp"
+		                android:background="@drawable/content_background"
+			            android:gravity="left|center_vertical" >
+			            <TextView
+			                android:id="@+id/time_action"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:gravity="left|center_vertical"
+			                android:text="2017-06"
+			                android:ems="10"
+			                android:textColor="@color/white"
+			                android:imeOptions="flagNoFullscreen"
+		                	android:inputType="textPersonName" />
+	
+			            <ImageView
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentRight="true"
+			                android:layout_marginRight="5dp"
+			                android:layout_centerVertical="true"
+			                android:src="@drawable/spinner_down_style" />
+					</RelativeLayout>
+        	    </LinearLayout>
+		        
+        	    
+		        <com.github.mikephil.charting.charts.PieChart
+		            android:id="@+id/now_piechart"
+		            android:layout_below="@+id/linear_layout_1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            />
+       		</RelativeLayout>
+ 
+        </LinearLayout>
+        
+    </ScrollView>
+	   
+
+</LinearLayout>

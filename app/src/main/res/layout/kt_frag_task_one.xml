@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="top"
+    android:background="@drawable/new_img_background"
+    android:orientation="vertical"
+    android:weightSum="6" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+        	     <RelativeLayout
+			        android:id="@+id/relativeLayout1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="50dp"
+			        android:layout_alignParentTop="true"
+			        android:layout_centerHorizontal="true" >
+		
+		        <TextView
+		            android:id="@+id/textView_title_2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:layout_centerVertical="true"
+		            android:text="定时开关"
+		            android:textAppearance="?android:attr/textAppearanceMedium"
+		            android:textColor="@color/white" />
+		
+		        <ImageView
+		            android:id="@+id/button_back"
+		            style="@style/Btn_Back_RelativeLayout" />
+		
+		    </RelativeLayout>    
+  		    
+              
+ 
+    
+            <LinearLayout  
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >  
+  
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+                    <TableRow  
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:background="@drawable/text_back"  
+                        android:paddingBottom="5.0dip"  
+                        android:gravity="center_vertical"
+                        android:paddingTop="5.0dip" >  
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:text="执行日期:"
+			                android:textSize="16sp"
+			                android:textColor="@color/white" />  
+			                <RelativeLayout
+					            android:layout_width="0dp"
+				                android:layout_height="wrap_content"
+				                android:layout_weight="0.5"
+				                android:background="@drawable/text_back"
+					            android:gravity="left|center_vertical" >
+					            <TextView
+					                android:id="@+id/txt_data"
+					                android:layout_width="fill_parent"
+					                android:layout_height="40dp"
+					                android:gravity="center"
+					                android:text="2016/09/09"
+					                android:ems="10"
+					                android:textSize="16sp"
+					                android:textColor="@color/white"
+					                android:background="@drawable/button_press_style"
+					                android:imeOptions="flagNoFullscreen"
+				                	android:inputType="textPersonName" />
+			
+					            <ImageView
+					                android:layout_width="wrap_content"
+					                android:layout_height="wrap_content"
+					                android:layout_alignParentRight="true"
+					                android:layout_marginRight="10dp"
+					                android:layout_centerVertical="true"
+					                android:src="@drawable/spinner_down_style" />
+			
+						</RelativeLayout>             
+
+                    </TableRow>
+  
+                    <TableRow  
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:background="@drawable/text_back"  
+                        android:paddingBottom="5.0dip"  
+                        android:gravity="center_vertical"
+                        android:paddingTop="5.0dip" >  
+			            <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:text="执行时间:"
+			                android:textSize="16sp"
+			                android:textColor="@color/white" />
+			            
+			            <RelativeLayout
+				            android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:background="@drawable/text_back"
+				            android:gravity="left|center_vertical" >
+					            <TextView
+					                android:id="@+id/txt_time"
+					                android:layout_width="fill_parent"
+					                android:layout_height="40dp"
+					                android:gravity="center"
+					                android:text="16:16:59"
+					                android:ems="10"
+					                android:textSize="16sp"
+					                android:textColor="@color/white"
+					                android:background="@drawable/button_press_style"
+					                android:imeOptions="flagNoFullscreen"
+				                	android:inputType="textPersonName" />
+			
+					            <ImageView
+					                android:layout_width="wrap_content"
+					                android:layout_height="wrap_content"
+					                android:layout_alignParentRight="true"
+					                android:layout_marginRight="10dp"
+					                android:layout_centerVertical="true"
+					                android:src="@drawable/spinner_down_style" />
+			
+						</RelativeLayout>     
+                    </TableRow>  
+  
+                </TableLayout>  
+            </LinearLayout>  
+            
+            
+            
+          <LinearLayout  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >  
+  
+                <TableLayout   
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:paddingLeft="1.0dip"  
+                    android:shrinkColumns="0"  
+                    android:stretchColumns="0" >  
+  
+                    <TableRow   
+                        android:background="@drawable/text_back"
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:gravity="center_vertical"   
+                        android:paddingTop="5.0dip"
+                        android:paddingBottom="5.0dip"  >  
+                       	<TextView           
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:text="持续时间:"
+			                android:textSize="16sp" 
+			                android:textColor="@color/white" />
+                       	<RelativeLayout
+				            android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:background="@drawable/text_back"
+				            android:gravity="left|center_vertical" >
+					            <TextView
+					                android:id="@+id/txt_continue_hour"
+					                android:layout_width="fill_parent"
+					                android:layout_height="40dp"
+					                android:gravity="center"
+					                android:text="5"
+					                android:ems="10"
+					                android:textSize="16sp"
+					                android:textColor="@color/white"
+					                android:background="@drawable/button_press_style"
+					                android:imeOptions="flagNoFullscreen"
+				                	android:inputType="textPersonName" />
+			
+					            <ImageView
+					                android:layout_width="wrap_content"
+					                android:layout_height="wrap_content"
+					                android:layout_alignParentRight="true"
+					                android:layout_marginRight="10dp"
+					                android:layout_centerVertical="true"
+					                android:src="@drawable/spinner_down_style" />
+			
+						</RelativeLayout>     
+                   	</TableRow> 
+                   	
+	                <TableRow  
+	                    android:layout_width="fill_parent"
+                        android:layout_height="40.0dp" 
+                        android:gravity="center_vertical"   
+                        android:paddingTop="5.0dip"
+                        android:paddingBottom="5.0dip"   		                    
+	                    android:background="@drawable/text_back" >  
+	                    <TextView           
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:text="执行动作:"
+			                android:textSize="16sp" 
+			                android:textColor="@color/white"/>
+						<RelativeLayout
+				            android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:background="@drawable/text_back"
+				            android:gravity="left|center_vertical" >
+					            <TextView
+					                android:id="@+id/action_1"
+					                android:layout_width="fill_parent"
+					                android:layout_height="40dp"
+					                android:gravity="center"
+					                android:text="合闸"
+					                android:ems="10"
+					                android:textSize="16sp"
+					                android:textColor="@color/white"
+					                android:background="@drawable/button_press_style"
+					                android:imeOptions="flagNoFullscreen"
+				                	android:inputType="textPersonName" />
+			
+					            <ImageView
+					                android:layout_width="wrap_content"
+					                android:layout_height="wrap_content"
+					                android:layout_alignParentRight="true"
+					                android:layout_marginRight="10dp"
+					                android:layout_centerVertical="true"
+					                android:src="@drawable/spinner_down_style" />
+			
+						</RelativeLayout>
+                   	 </TableRow>  
+                </TableLayout>  
+            </LinearLayout> 
+         
+
+            
+            
+             <LinearLayout  
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >   
+               <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+ 
+  
+                    <TableRow  
+                        android:layout_height="40.0dp" 
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:layout_width="fill_parent"  >    
+						<Button
+			                android:id="@+id/but_set"
+			                android:layout_width="0dp"
+			                android:layout_height="40dp"
+			                android:layout_weight="1"
+			                android:gravity="center"
+			                android:background="@drawable/button_press_style"
+			                android:ems="10"
+			                android:text="确定"
+			                android:textColor="@color/white"
+			                android:imeOptions="flagNoFullscreen"
+			                android:inputType="textPersonName"
+			                android:textSize="16sp" />
+                    </TableRow>  
+                </TableLayout>  
+            </LinearLayout>
+            
+             <LinearLayout  
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >   
+               <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+ 
+  
+                    <TableRow  
+                        android:layout_height="40.0dp" 
+                        android:layout_width="fill_parent"  
+                        android:background="@drawable/text_back"     >    
+					<TextView
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:textColor="@color/white"
+					    android:text="持续时间:持续时间是指当在指定时间执行跳闸或合闸任务失败后，在选定持续时间的时间段内择机继续执行跳闸或合闸任务"
+					   />
+                    </TableRow>  
+                </TableLayout>  
+            </LinearLayout>
+                       
+            
+            
+   		</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/linear_textout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="历史活动流"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+
+        <ImageView
+            android:id="@+id/but_back_1"
+            style="@style/Btn_Back_RelativeLayout" />
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/line_color"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+          <LinearLayout
+            android:id="@+id/linear_textout"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp">
+	        <TextView
+	            android:id="@+id/hitory_text"
+	            android:paddingLeft="10dp"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:textSize="15sp"
+	            />
+		</LinearLayout>
+    </ScrollView>
+    
+  
+	
+
+</LinearLayout>

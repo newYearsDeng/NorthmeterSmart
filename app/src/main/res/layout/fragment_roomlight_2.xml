@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+	<com.andview.refreshview.XRefreshView
+		android:id="@+id/xRefreshView"
+		android:layout_above="@+id/relative1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<ListView
+			android:id="@+id/pull_listview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:divider="#486695"
+			android:dividerHeight="0.5dp"
+			android:scrollbarSize="2dp"
+			android:scrollbarThumbVertical="@color/line_color"
+			android:listSelector="@android:color/transparent"
+			android:cacheColorHint="#00000000" />
+	</com.andview.refreshview.XRefreshView>
+
+     <RelativeLayout
+         android:id="@+id/relative1"
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:paddingTop="20dp"
+         android:layout_height="wrap_content"
+         android:gravity="center_vertical">
+         <LinearLayout 
+             android:id="@+id/linear_1" 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center_vertical">
+             <TextView 
+	            android:id="@+id/light_num"
+	            android:layout_marginLeft="20dp"
+	            android:layout_width="70dp"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:gravity="center"
+	            android:text="亮度50%:"/>
+             <SeekBar
+	            android:id="@+id/seekbar_1"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_centerInParent="true"
+			    android:maxHeight="10px"
+			    android:minHeight="10px"
+			    android:paddingLeft="20px"
+			    android:paddingRight="40dp"
+			    android:max="100"
+			    android:progressDrawable="@drawable/seekbar_define_style"
+			    android:thumb="@drawable/seekbar_thumb"/>
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_below="@+id/linear_1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+             android:orientation="horizontal"
+             android:gravity="center_vertical">
+	         <TextView 
+	            android:id="@+id/light_text"
+	            android:layout_marginLeft="20dp"
+	            android:layout_width="70dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textColor="@color/white"
+	            android:text="选择开闭:"
+	             />
+	         <CheckBox
+	            android:id="@+id/checkbox"
+	            android:padding="5dp"
+	            android:layout_toRightOf="@+id/light_text"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:drawableLeft="@drawable/checkbox_new_thz_style"
+	            android:gravity="center"
+	            android:button="@null"
+	            android:layout_marginRight="20dp"
+	            android:text="@null" />
+	         <Button
+	            android:id="@+id/but_correct_time"
+	            android:layout_toRightOf="@+id/checkbox1"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="35dp"
+	            android:layout_marginRight="20dp"
+	            android:gravity="center"
+	            android:background="@drawable/button_press_style"
+	            android:ems="10"
+	            android:text="执行"
+	            android:textColor="@color/white"
+	            android:imeOptions="flagNoFullscreen"
+	            android:inputType="textPersonName"
+	            android:textSize="16sp" /> 
+         </LinearLayout>
+         
+         
+     </RelativeLayout>
+       
+
+</RelativeLayout>

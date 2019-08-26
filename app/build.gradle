@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+// 添加插件
+apply plugin: 'com.mob.sdk'
+// 在MobSDK的扩展中注册SMSSDK的相关信息
+MobSDK {
+    appKey "1b4769ff38434"
+    appSecret "84e9c3d6c4d4213d832b36e8f1eae458"
+    SMSSDK {}
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    //签名打包时检查png有异常，Androidstudio严格审查png图片，禁止Gradle检查PNG的合法性
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    defaultConfig {
+        applicationId "com.northmeter.northmetersmart"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 2
+        versionName "1.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation files('libs/httpclient-4.5.jar')
+    implementation files('libs/httpcore-4.4.1.jar')
+    implementation files('libs/zxing.jar')
+    implementation files('libs/locSDK_3.1.jar')
+    implementation files('libs/mpandroidchartlibrary-2-2-4.jar')
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+    implementation files('libs/pinyin4android1.0.jar')
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation files('libs/wmqtt.jar')
+    implementation files('libs/baidumapapi_v2_1_2.jar')
+    implementation files('libs/XlwDevice.jar')
+    implementation files('libs/mpandroidchartlibrary-2-2-4.jar')
+    //下拉刷新
+    implementation 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    implementation 'com.zhy:autolayout:1.4.5'
+    //控件绑定
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+
+    implementation 'org.litepal.android:core:1.3.2'
+    implementation 'com.alibaba:fastjson:1.2.37'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+
+}

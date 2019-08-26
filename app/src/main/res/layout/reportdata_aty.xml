@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background" >
+    
+    <RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/textView_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息及报警记录"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/button_back"
+            style="@style/Btn_Back_RelativeLayout" />
+        <TextView
+            android:id="@+id/edit_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="清除"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/color_style_white" />
+
+    </RelativeLayout>
+    
+    
+
+    <ListView
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativelayout3"
+        android:divider="@android:color/transparent"
+       	android:dividerHeight="1dp"
+       	android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/line_color"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#0000"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+         
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+			android:gravity="center_horizontal"
+	        android:orientation="horizontal" >
+         
+        <TextView
+       		android:id="@+id/img_choose"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/color_style_white"
+            android:text="全选"/>
+        		
+
+        <TextView
+            android:id="@+id/export"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/img_add"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@drawable/color_style_white"
+            android:text="导出"/>
+        
+	</LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

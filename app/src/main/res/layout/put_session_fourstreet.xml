@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background"
+    android:orientation="vertical" >
+    <RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设置"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/button1"
+            style="@style/Btn_Back_RelativeLayout" />
+
+    </RelativeLayout>
+     
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="25dp" 
+            android:paddingRight="10dp">
+             <TableLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="1.0dip"
+                   android:gravity="center"
+                   android:shrinkColumns="0"
+                   android:stretchColumns="0" >
+                   <TableRow  
+                      android:layout_width="fill_parent" 
+                      android:layout_height="50dp" 
+                      
+                      android:gravity="center"
+                      android:layout_marginLeft="1dip">  
+
+					 <TextView
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.7"
+		                android:gravity="center"
+		                android:text="设备名称:"
+		                android:textSize="16sp"
+		                android:textColor="@color/white" />
+		
+		            <EditText
+		                android:id="@+id/editText_name"
+		                android:layout_width="0dp"
+		                android:layout_height="40dp"
+		                android:layout_weight="1"
+		                android:ems="10"
+		                android:paddingLeft="10dp"
+		                android:gravity="center|left"
+		            	android:textSize="16sp"
+		            	android:textColor="@color/white"
+		            	android:layout_marginLeft="5dp"
+		            	android:background="@drawable/text_back"
+		                android:imeOptions="flagNoFullscreen"
+		                android:inputType="textPersonName" />
+		            </TableRow>
+				</TableLayout>
+        </LinearLayout>
+
+     <LinearLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp" >
+            <TableLayout
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="1.0dip"
+                   android:gravity="center"
+                   android:shrinkColumns="0"
+                   android:stretchColumns="0" >
+                   <TableRow  
+                      android:layout_width="fill_parent" 
+                      android:layout_height="40.0dp" 
+                      android:layout_marginLeft="1dip"  
+                      android:layout_marginRight="1dip"      
+                      android:gravity="center_vertical" >  
+
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="0.7"
+		                android:gravity="center"
+		                android:text="是否显示:"
+		                android:textSize="16sp"
+		                android:textColor="@color/white" />
+		
+		            <ToggleButton
+				        android:id="@+id/show_togbtn"
+				        android:layout_width="0dp"
+				        android:layout_height="wrap_content"
+				        android:gravity="center"
+				        android:layout_weight="1"
+				        android:layout_marginLeft="5dp"
+				        android:background="@android:color/transparent"
+				        android:button="@drawable/checkbox_new_style"
+				        android:checked="true"
+				        android:text=""
+				        android:textOff=""
+				        android:textOn="" />
+		            </TableRow>
+				</TableLayout>
+        </LinearLayout>
+        
+        
+     <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_press_style"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

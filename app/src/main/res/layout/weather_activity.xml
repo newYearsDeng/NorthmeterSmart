@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/layout_background"
+    android:background="@drawable/bg_rain_day"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/linear_textout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+		<ImageView
+            android:id="@+id/but_back_1"
+            style="@style/Btn_Back_RelativeLayout" />
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+    </RelativeLayout>
+    
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/line_color">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+	       >
+	       
+	<LinearLayout
+	    android:id="@+id/layout_1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	    
+	    <TextView 
+	         android:id="@+id/city_name"
+	         android:layout_marginTop="10dp"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="left|center"
+	         android:paddingLeft="10dp"
+	         android:text="深圳"
+           	 android:textColor="@color/white"
+             android:textSize="21sp"
+	        />
+	   
+    	<LinearLayout
+    	    android:id="@+id/change_city"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:padding="5dp"
+	        android:gravity="left|center"
+	        android:orientation="vertical">
+			     <TextView 
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:text="点击切换城市"
+	           	 android:textColor="@color/white"
+	             android:textSize="13sp"/>  
+		</LinearLayout>
+		
+	   	<LinearLayout
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal">
+			     
+	   	    <LinearLayout
+	   	        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:layout_width="0dp"
+		        android:padding="5dp"
+		        android:gravity="left|top"
+		        android:orientation="vertical">
+		        <TextView 
+		         android:id="@+id/today_air"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:text="空气质量:"
+	           	 android:textColor="@color/white"
+	             android:textSize="15sp"/> 
+	             
+		        <TextView 
+		         android:id="@+id/today_damp"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:text="湿度:"
+	           	 android:textColor="@color/white"
+	             android:textSize="15sp"/>
+	   	    
+	   	        
+	        </LinearLayout>
+	        
+	   	     <LinearLayout
+	   	        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:layout_width="0dp"
+		        android:gravity="left"
+		        android:orientation="vertical">
+		        <ImageView 
+				        android:id="@+id/image_today_weather"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:src="@drawable/weather_15"
+				        />  
+	   	      
+	        </LinearLayout>
+			 
+		      
+		</LinearLayout>
+	</LinearLayout>	
+	
+	
+	<LinearLayout
+	    android:id="@+id/layout_2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	   	
+	   	<TextView 
+	   	     android:layout_marginTop="10dp"
+	         android:id="@+id/today_weather"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="多云"
+           	 android:textColor="@color/white"
+             android:textSize="17sp"/>
+	    
+	    
+		<TextView 
+		     android:id="@+id/today_temputer"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:gravity="center"
+	         android:text="20 / 30"
+           	 android:textColor="@color/white"
+             android:textSize="21sp"/>  
+        
+	       
+
+		<TextView 
+		   		 android:id="@+id/today_wind"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:text="微风 小于3级"
+	           	 android:textColor="@color/white"
+	             android:textSize="17sp"/>   
+	             
+		<TextView 
+	         android:id="@+id/city_time"	         
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="时间"
+           	 android:textColor="@color/white"
+             android:textSize="17sp"
+	        />	
+	</LinearLayout>	
+	
+	<ScrollView 
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/transparent_background">
+		
+	    <HorizontalScrollView 
+	        android:scrollbars="none"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content">
+		         <LinearLayout
+				    android:id="@+id/today_layout_2"
+				    android:layout_marginTop="20dp"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="center"
+				    android:orientation="horizontal" >
+				    </LinearLayout>
+		</HorizontalScrollView>
+	  	
+		
+	   
+		
+	
+	    
+	  </ScrollView>
+
+	
+	
+	
+	
+   
+	
+	
+      
+   	</LinearLayout>
+        
+    </ScrollView>
+    
+    
+
+</LinearLayout>

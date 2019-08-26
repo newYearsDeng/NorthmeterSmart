@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" > 
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+        </LinearLayout>
+ 
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="设备名称:"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:background="@drawable/text_back"
+                android:ems="10"
+            	android:textSize="16sp"
+            	android:textColor="@color/white"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="电器类型:"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+            
+            <RelativeLayout
+	            android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/text_back"
+	            android:gravity="left|center_vertical" >
+		            <Spinner
+		                android:id="@+id/editText_type"
+		                android:layout_width="fill_parent"
+		                android:layout_height="42dp"
+		                android:gravity="center"
+		                android:ems="10"
+		                android:background="@drawable/button_press_style"
+		                android:imeOptions="flagNoFullscreen"
+	                	android:inputType="textPersonName" />
+
+		            <ImageView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentRight="true"
+		                android:layout_marginRight="10dp"
+		                android:layout_centerVertical="true"
+		                android:background="@drawable/spinner_down_style" />
+
+			</RelativeLayout>
+
+           
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+             <ImageView
+                 android:id="@+id/images_change"
+                 android:layout_width="80dp"
+                 android:layout_height="90dp"
+                 />
+
+        </LinearLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_press_style"
+            android:gravity="center"
+            android:text="确认修改"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

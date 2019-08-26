@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background" >
+    
+    <RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/textView_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设备显示与隐藏"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/button2"
+            style="@style/Btn_Back_RelativeLayout" />
+        <TextView
+            android:id="@+id/edit_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/color_style_white" />
+
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <LinearLayout
+           	android:layout_below="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="所有设备显示:"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+            <ToggleButton
+		        android:id="@+id/show_togbtn_air"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:layout_weight="1"
+		        android:layout_marginLeft="5dp"
+		        android:background="@android:color/transparent"
+		        android:button="@drawable/checkbox_new_style"
+		        android:checked="true"
+		        android:text=""
+		        android:textOff=""
+		        android:textOn="" />
+            </LinearLayout>
+            <LinearLayout
+	           	android:layout_below="@+id/relativeLayout1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp" >
+	            <TextView
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center"
+	                android:text=""
+	                android:textSize="16sp"
+	                android:textColor="@color/white" />
+
+            </LinearLayout>
+   </LinearLayout>
+    
+
+
+</RelativeLayout>

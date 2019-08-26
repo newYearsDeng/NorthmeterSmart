@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t1" />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t2" />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t3" />
+
+    <Button
+        android:id="@+id/btn4"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t4" />
+    <Button
+        android:id="@+id/btn5"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t5" />
+    <Button
+        android:id="@+id/btn6"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t6" />
+    <Button
+        android:id="@+id/btn7"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t7" />
+    <Button
+        android:id="@+id/btn8"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t8" />
+    <Button
+        android:id="@+id/btn9"
+        style="@style/f1_p1_btn"
+        android:text="@string/f4p1_t9" />
+
+</LinearLayout>

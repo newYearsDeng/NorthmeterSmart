@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@drawable/btn_white_bg"
+     android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+		android:background="@drawable/new_back_ground" >
+		
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/device_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/button1"
+            style="@style/Btn_Back_RelativeLayout" />
+    </RelativeLayout>
+ 
+     <LinearLayout
+         android:id="@+id/linearLayout1"
+         android:layout_width="fill_parent"
+         android:layout_height="25.0dip"
+         android:layout_marginTop="10dp"
+          >
+ 
+         <TextView
+             android:id="@+id/text1"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1.0"
+             android:gravity="center"
+             android:text="@string/device_viewpage_title1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="18.0dip" />
+          <ImageView
+             android:layout_width="0.5dp"
+             android:layout_height="fill_parent"
+             android:scaleType="matrix"
+             android:src="#192E4D"
+             android:textSize="18.0dip" />
+ 
+         <TextView
+             android:id="@+id/text2"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_weight="1.0"
+             android:gravity="center"
+             android:text="@string/device_viewpage_title2"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+     </LinearLayout>
+ 
+     <ImageView
+             android:id="@+id/iv_bottom_line"
+             android:layout_width="50dip"
+             android:layout_height="1.5dip"
+             android:scaleType="matrix"
+             android:src="@color/sandybrown" />
+ 
+     <android.support.v4.view.ViewPager
+         android:id="@+id/viewpage"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+ 
+ </LinearLayout>

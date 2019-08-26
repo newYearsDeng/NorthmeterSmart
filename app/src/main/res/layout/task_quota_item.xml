@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/active_back"
+    android:descendantFocusability="blocksDescendants" >
+<!-- android:background="@drawable/back_ground_color" -->
+    <CheckBox
+        android:id="@+id/chk_select"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/cricle_selector"
+        android:clickable="false"
+        android:button="@null"
+        android:text="@null" />
+     
+
+    
+   
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/layout_time"
+        android:gravity="left"
+        android:orientation="vertical" >
+        
+	        
+	      <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@+id/txt_time"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:textSize="17sp"
+	            android:text="使用额度: " />
+	
+	       <TextView
+	            android:id="@+id/txt_quota_1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:textSize="17sp"
+	            android:text="0kwh" />
+	       
+	    </LinearLayout>
+	
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@+id/txt_time"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	       <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:textSize="17sp"
+	            android:text="使用超额度时: " />
+	
+	       <TextView
+	            android:id="@+id/txt_quota_2"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:textSize="17sp"
+	            android:text="0" />
+	       
+	    </LinearLayout>
+	
+	    
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.northmeter.northmetersmart">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-feature    android:name="android.hardware.camera" />
+    <uses-feature    android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:name"
+        android:allowBackup="true"
+        android:icon="@mipmap/apk_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/apk_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/welcomeTheme"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name=".dyd.smart.activity.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LoginAty"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name=".dyd.smart.activity.LoginAty" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UserCenterInformation"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_center_aty"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name=".dyd.smart.activity.CenterAty" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MessageAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_message_aty" >
+        </activity>
+        <activity
+            android:name=".activity.MessageAty_Center"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_message_aty" >
+        </activity>
+        <activity
+            android:name=".activity.AddAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_add_aty" >
+        </activity>
+
+        <activity
+            android:name=".activity.AirQualityQetectorAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tvaty" >
+        </activity>
+
+        <activity
+            android:name=".activity.TVAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tvaty" >
+        </activity>
+        <activity
+            android:name=".activity.TVAty_Four_street"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tvaty" >
+        </activity>
+        <activity
+            android:name=".activity.TVAty_ZGB"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tvaty" >
+        </activity>
+        <activity
+            android:name=".activity.MachineAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_machine_aty" >
+        </activity>
+
+        <!-- 管理主界面所有设备的显示与隐藏 -->
+        <activity
+            android:name=".activity.DeviceDisplayAllAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_machine_aty" >
+        </activity>
+
+        <activity android:name=".view.Device_viewpager"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".fragment.TV_Fragment4_1" ></activity>
+        <activity android:name=".fragment.TV_Fragment4_2" ></activity>
+        <activity android:name=".fragment.TV_Fragment4_3" ></activity>
+
+        <!-- 排名 -->
+        <activity
+            android:name=".activity.Energy_And_Rank_Aty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 活动流历史查看界面 -->
+        <activity
+            android:name=".activity.Active_History_Aty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 一次性定时任务设置界面 -->
+        <activity
+            android:name=".fragment.Kt_Frag_Task_one_View"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".fragment.Kt_Frag_Task_one_Add"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 定额任务界面 -->
+        <activity
+            android:name=".fragment.Task_Quota_View"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".fragment.Task_Quota_Add"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--月报表界面  -->
+        <activity
+            android:name=".activity.Active_Report_Forms"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.Active_Report_Forms_Center"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--用电明细  -->
+        <activity
+            android:name=".activity.Active_Report_Detailed"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <!-- 分体空调中的界面 -->
+        <activity android:name=".fragment.Kt_Frag_Other"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".fragment.Kt_Frag2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".fragment.Kt_Frag3"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- About_Activity关于界面  -->
+        <activity android:name=".activity.About_Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- zigbee插座修改界面 -->
+        <activity android:name=".activity.Change_Message"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 中央空调中的界面 -->
+        <activity android:name=".fragment.Kt_Frag_Center_3_view"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".fragment.Kt_Frag_Center_3_add"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 中央空调 插座信息界面 -->
+        <activity android:name=".fragment.TV_Fragment3_1"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 分体空调信息界面 -->
+        <activity android:name=".fragment.Kt_Frag4"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!-- 建筑信息 -->
+        <activity android:name=".activity_build.FragmentActivity_Build"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity_build.FragmentActivity_Room"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity android:name=".activity_build.Activity_Visitor"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity_build.Activity_Build_Garden"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+        <!-- 用户中心 -->
+        <activity android:name=".activity.UserCenterAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 用户信息更新 -->
+        <activity android:name=".activity.UpdataUserInfo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 消息及报警记录-->
+        <activity android:name=".activity.ReportDataAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 网络地址设置 -->
+        <activity android:name=".activity.UrlSettinAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 管理设备 -->
+        <activity
+            android:name=".activity_build.DeviceDisplayAty"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 建筑添加 -->
+        <activity android:name=".activity_build.Add_BuildAty_1"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity_build.Add_BuildAty_2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 城市选择 -->
+        <activity
+            android:name=".droid.ChangeCityActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <!--单灯控制  -->
+        <activity android:name=".activity_build.fragment.Activity_LightControl"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- scan -->
+        <activity
+            android:name=".camera.activity.CaptureActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".northmeter.northmetersmart.camera.activity.CaptureActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--&lt;!&ndash; 天气预报 &ndash;&gt;-->
+        <!--<activity android:name=".activity.WeatherActivity"-->
+            <!--android:configChanges="orientation|keyboardHidden"-->
+            <!--android:screenOrientation="portrait">-->
+        <!--</activity>-->
+
+
+        <service
+            android:name=".service.ReadService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name=".mqtt.PushService"
+            android:enabled="true"
+            android:process=":pushService"
+            android:exported="true">
+        </service>
+
+
+        <!--MOB短信验证-->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <!-- 通过AndroidManifest配置AppKey和AppSecret，如果你选择通过代码配置，则不需要配置以下meta-data
+        <meta-data android:name="Mob-AppKey" android:value="2056078654800"/>
+        <meta-data android:name="Mob-AppSecret" android:value="fdc307b884b44f646360ecdb0215560c"/>
+        -->
+
+        <!--微信支付-->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity android:name=".wxpay.WXPayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 微信登录 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:label="@string/app_name"
+            android:exported="true">
+        </activity>
+
+    </application>
+
+</manifest>

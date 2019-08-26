@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="请将以太网转Zigbee网关连接入网后在此页面输入网关号，以便配置好进行通信！" />
+            
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="输入网关号:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/zigbeeEdit1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="输入网关号码"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="请输入名称:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/zigbeeEdit2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="输入网关名称"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+
+     <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="输入表号:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn_add_search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_search" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+          <!-- android:text="请按一下插座面板上的配置按钮,插座液晶的电话通讯符号变为快速闪烁，开始进入配置状态" -->
+            
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/next_zigbee"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_green_bg"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:alpha="0.8"
+        android:background="@drawable/dialog_corners_white"
+        android:gravity="left" >
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="余额详情"
+            />
+        
+        <LinearLayout 
+            android:id="@+id/linear_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_title"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="15sp"
+	            android:textColor="@color/black"
+	            android:text="本月已使用补助金额:"
+	            />
+            <TextView
+	            android:id="@+id/text_bzje"
+	            android:layout_marginLeft="10dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="15sp"
+	            android:textColor="@color/black"
+	            android:text="0.00元"
+	            />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/linear_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linear_1"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal">
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="15sp"
+	            android:textColor="@color/black"
+	            android:text="本月已使用付费金额:"
+	            />
+            <TextView
+	            android:id="@+id/text_ffje"
+	            android:layout_width="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="15sp"
+	            android:textColor="@color/black"
+	            android:text="0.00元"
+	            />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/linear_3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linear_2"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="15sp"
+	            android:textColor="@color/blue"
+	            android:text="总剩余金额:"
+	            />
+            <TextView
+	            android:id="@+id/text_zsyje"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:gravity="center"
+	            android:textSize="15sp"
+	            android:textColor="@color/blue"
+	            android:text="0.00元"
+	            />
+        </LinearLayout>
+
+       
+   		
+   		<ImageView
+            android:id="@+id/text_image_1"
+            android:layout_above="@+id/text_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#192E4D"
+            />
+   		
+		<TextView
+            android:id="@+id/text_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="确定"
+            />
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

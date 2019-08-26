@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><shape>
+            <gradient android:centerColor="@drawable/edittext_back_right" android:endColor="@drawable/edittext_back_center" android:startColor="@drawable/edittext_back_left" />
+
+            <!-- <corners android:radius="5dp" /> -->
+
+            <stroke  android:width="0.7dp" android:color="#000000" />
+        </shape></item>
+
+</selector>

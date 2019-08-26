@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#3695E5" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="延时控制"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/yskz_back"
+            style="@style/Btn_Back_RelativeLayout" />
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+        
+    	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+ 			<TextView
+ 			    android:id="@+id/tv_zhuangtai"
+ 			    android:layout_width="0dp"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_weight="1"
+ 			    android:gravity="left"
+ 			    android:textColor="#000000" />
+      
+        </LinearLayout>
+
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="left"
+    	    android:paddingLeft="10dp"
+    	    android:paddingRight="10dp" >
+
+    	    <TextView
+    	        android:id="@+id/tv_text_2"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:gravity="left"
+    	        android:text="延时控制"
+    	        android:textColor="#ff333333"
+    	        android:textSize="18sp" />
+
+    	</LinearLayout>
+    
+              <LinearLayout  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >  
+  
+                <TableLayout   
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:paddingLeft="1.0dip"  
+                    android:shrinkColumns="0"  
+                    android:stretchColumns="0" >  
+  
+                    <TableRow   
+                        android:background="@drawable/btn_white"
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:layout_marginLeft="10.0dip"  
+                        android:layout_marginRight="10.0dip"    
+                        android:paddingBottom="5.0dip"  
+                        android:paddingTop="10.0dip" >  
+                       	 <TextView
+			                android:id="@+id/tv_text_3"
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:layout_gravity="center"
+			                android:text="延时时间(分钟):"
+			                android:textSize="16sp"
+			                android:textColor="#000000" />
+							           
+		            	 <EditText
+			                android:id="@+id/tv_input_3"
+			                android:layout_width="0dp"
+			                android:layout_height="40dp"
+			                android:layout_weight="0.5"
+			                android:layout_gravity="center"
+			                android:background="@drawable/text_color"
+			                android:ems="10"
+			                android:text="0"
+			                android:textSize="16sp"
+			                android:layout_marginRight="10dip"
+			                android:imeOptions="flagNoFullscreen"
+				            android:inputType="textPersonName"/>           
+                    </TableRow>  
+  
+		                 <TableRow  
+		                    android:layout_width="fill_parent"  
+		                    android:layout_marginLeft="10.0dip"  
+		                    android:layout_marginRight="10.0dip"  		                    
+		                    android:paddingBottom="5.0dip"  
+		                    android:paddingTop="5.0dip"
+		                    android:background="@drawable/btn_white" >  
+		                    <TextView
+				                android:id="@+id/tv_text_4"
+				                android:layout_width="0dp"
+				                android:layout_height="wrap_content"
+				                android:layout_weight="0.5"
+				                android:gravity="center"
+				                android:layout_gravity="center"
+				                android:textSize="16sp"
+				                android:layout_marginRight="10dp"
+				                android:text="跳/合闸选择项:"
+				                android:textColor="#000000" />
+						     <Spinner
+				 			    android:id="@+id/spinner"
+				 			    android:layout_width="0dp"
+				 			    android:layout_height="45dp"
+				 			    android:layout_weight="0.5"
+				 			    android:gravity="center"
+				 			    android:textSize="16sp"
+				 			    android:layout_marginRight="10dip"
+				 			    android:background="@drawable/check_bg"
+				 			    />
+                   	 </TableRow>  
+                   	 <TableRow  
+		                    android:layout_width="fill_parent"  
+		                    android:layout_marginLeft="10.0dip"  
+		                    android:layout_marginRight="10.0dip"  		                    
+		                    android:paddingBottom="5.0dip"  
+		                    android:paddingTop="5.0dip"
+		                    android:gravity="center"
+		                    android:background="@drawable/btn_white" >
+
+                   	     <Button
+                   	         android:id="@+id/tv_button_4"
+                   	         android:layout_width="0dp"
+                   	         android:layout_height="40dp"
+                   	         android:layout_marginLeft="100dip" 
+                   	         android:layout_marginRight="100dip"
+                   	         android:background="@drawable/btn_green_bg"
+                   	         android:gravity="center"
+                   	         android:text="确定"
+                   	         android:textColor="#ffffff"
+                   	         android:textSize="16sp" />
+		                    
+                   	 </TableRow>  
+                </TableLayout>  
+            </LinearLayout> 
+         <!--     
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/tv_button_4"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_green_bg"
+            android:gravity="center"
+            android:text="设置"
+            android:textSize="16sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>-->
+        
+    </LinearLayout>
+    
+</LinearLayout>

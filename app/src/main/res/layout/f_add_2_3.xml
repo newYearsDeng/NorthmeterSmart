@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="请将Zigbee智能空调控制器输入，并选择绑定的网关，以便配置好进行通信！" />
+            
+    </LinearLayout>
+    	 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="Zigbee设备号:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/zgb_socket_air"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="输入空调控制器表号"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="选择空调型号:"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinner_zgb_air_type"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dip"
+                android:layout_weight="0.95"
+                android:background="@drawable/noselected_white"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="选择关联网关:"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinner_zgb_air"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dip"
+                android:layout_weight="0.95"
+                android:background="@drawable/noselected_white"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+     <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="输入表号:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btn_add_search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icon_search" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/zgb_saomiao"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_green_bg"
+            android:gravity="center"
+            android:text="二维码扫描"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/zgb_socket_air_next"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_green_bg"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

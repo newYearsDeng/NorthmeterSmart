@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   
+    <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbarSize="2dp"
+       android:scrollbarThumbVertical="@color/line_color">
+       
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+		    <RelativeLayout
+		        android:id="@+id/relativeLayout1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center" >
+		
+		        <LinearLayout
+		            android:id="@+id/layout_dialog"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:background="@drawable/air_center_inf"
+		            android:gravity="center_horizontal|center"
+		            android:orientation="vertical" >
+		            
+		            <ImageView
+		                android:id= "@+id/img_view_icon"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginBottom="5dp"
+		                android:src="@drawable/img_siludengkong_icon"/>
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center"
+		                android:orientation="horizontal" >
+		
+		                <TextView
+		                    android:id="@+id/textview2_socket"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignTop="@+id/imageView_icon"
+		                    android:layout_toRightOf="@+id/imageView_icon"
+		                    android:text="通讯网络:"
+		                    android:textColor="#FFFFFF" />
+		
+		                <ImageView
+				            android:id="@+id/image0_socket"
+				            style="@style/message_texts"
+				            android:layout_width="wrap_content"
+				            android:layout_marginLeft="5dp"
+				            android:scaleType="fitStart"
+				            android:layout_height="wrap_content"
+				            android:src="@drawable/signal_0"
+				            android:layout_toRightOf="@+id/textView2_socket"/>
+		            </LinearLayout>
+			        
+		            <View
+			            android:id="@+id/air_view_show"
+			            android:layout_width="fill_parent"
+			            android:layout_height="1dp"
+			            android:layout_marginLeft="30dp"
+			            android:layout_marginRight="30dp"
+			            android:alpha="0.5"
+			            android:background="@color/white"/>
+			        
+		
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_horizontal"
+		                android:orientation="horizontal" >
+		
+		                <TextView
+		                    android:id="@+id/textView2_air"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignTop="@+id/imageView_icon"
+		                    android:layout_marginLeft="15dp"
+		                    android:layout_toRightOf="@+id/imageView_icon"
+		                    android:text="电量:"
+		                    android:textColor="#FFFFFF" />
+		
+		                <TextView
+		                    android:id="@+id/item0"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignTop="@+id/textView2_air"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_toRightOf="@+id/textView2_air"
+		                    android:text="--kwh"
+		                    android:textColor="#FFFFFF" />
+		            </LinearLayout>
+		
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_horizontal"
+		                android:orientation="horizontal" >
+		
+		                <TextView
+		                    android:id="@+id/textView3_air"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignLeft="@+id/textView6"
+		                    android:layout_below="@+id/textView6"
+		                    android:layout_marginTop="1dp"
+		                    android:text="功率:"
+		                    android:textColor="#FFFFFF" />
+		
+		                <TextView
+		                    android:id="@+id/item1"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignBaseline="@+id/textView3_air"
+		                    android:layout_alignBottom="@+id/textView3_air"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_toRightOf="@+id/textView3_air"
+		                    android:text="--W"
+		                    android:textColor="#FFFFFF" />
+		            </LinearLayout>
+		
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_horizontal"
+		                android:orientation="horizontal" >
+		
+		                <TextView
+		                    android:id="@+id/textView5_1"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="1dp"
+		                    android:text="电流:"
+		                    android:textColor="#FFFFFF" />
+		
+		                <TextView
+		                    android:id="@+id/item3"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignLeft="@+id/item2"
+		                    android:layout_marginLeft="5dp"
+		                    android:text="--A"
+		                    android:textColor="#FFFFFF" />
+		            </LinearLayout>
+		        </LinearLayout>
+		
+		        
+		    	<CheckBox
+			        android:id="@+id/checkBox1"
+			        android:layout_below="@+id/layout_dialog"
+			        android:layout_alignLeft="@+id/layout_dialog"
+			        android:layout_marginTop="10dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/checkbox_new_thz_style"
+			        android:button="@null"
+			        android:text="@null" />
+		
+		    	<ImageView
+		    	    android:id="@+id/img_refresh"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_below="@+id/layout_dialog"
+		    	    android:layout_alignRight="@+id/layout_dialog"
+		    	    android:layout_marginTop="12dp"
+		    	    android:src="@drawable/socket_refresh_style" />
+		
+		    </RelativeLayout>
+		    
+		    
+		
+		    
+		    
+		    <LinearLayout
+		        android:id="@+id/linear_action_1"
+		        android:layout_marginTop="10dp"
+		        android:visibility="gone"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:paddingLeft="10dp"
+			    android:paddingRight="10dp"
+		        android:orientation="vertical">
+		    
+			   <LinearLayout
+			        android:layout_height="wrap_content"
+			        android:layout_width="match_parent"
+			        android:orientation="horizontal">
+			        
+				    <LinearLayout
+				        android:layout_height="wrap_content"
+				        android:layout_width="match_parent"
+				        android:layout_weight="1"
+				        android:orientation="vertical">
+				        <ImageView
+				            android:id="@+id/activ_img_1"
+				            android:paddingTop="10dp"
+		                    android:paddingBottom="10dp"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+							android:src="@drawable/active_on"
+				            />
+					</LinearLayout>
+					<LinearLayout
+				        android:layout_height="wrap_content"
+				        android:layout_width="match_parent"
+				        android:layout_weight="1"
+				        android:orientation="vertical">
+		
+		
+				        <ImageView
+				            android:id="@+id/activ_img_2"
+				            android:paddingTop="10dp"
+		                    android:paddingBottom="10dp"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+							android:src="@drawable/active_normal"	
+				            />
+					</LinearLayout>
+					<LinearLayout
+				        android:layout_height="wrap_content"
+				        android:layout_width="match_parent"
+				        android:layout_weight="1"
+				        android:orientation="vertical">
+				        <ImageView
+				            android:id="@+id/activ_img_3"
+				            android:paddingTop="10dp"
+		                    android:paddingBottom="10dp"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+							android:src="@drawable/active_activity"
+				            />
+					</LinearLayout>
+					<LinearLayout
+				        android:layout_height="wrap_content"
+				        android:layout_width="match_parent"
+				        android:layout_weight="1"
+				        android:orientation="vertical">
+				        
+				        <ImageView
+				            android:id="@+id/activ_img_4"
+				            android:paddingTop="10dp"
+		                    android:paddingBottom="10dp"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+							android:src="@drawable/active_stand"
+				            />
+					</LinearLayout>
+					
+					<LinearLayout
+				        android:layout_height="wrap_content"
+				        android:layout_width="match_parent"
+				        android:layout_weight="1"
+				        android:orientation="vertical">
+				        
+				        <ImageView
+				            android:id="@+id/activ_img_5"
+				            android:paddingTop="10dp"
+		                    android:paddingBottom="10dp"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+							android:src="@drawable/active_off"
+				            />
+					</LinearLayout>
+				</LinearLayout>
+			
+			   
+			  		 <LinearLayout
+			  		    android:layout_marginTop="10dp"
+			  		    android:paddingTop="10dp"
+		                android:paddingBottom="10dp"
+				        android:layout_height="wrap_content"
+				        android:layout_width="match_parent"
+				        android:gravity="center_vertical"
+				        android:orientation="horizontal">
+				        <TextView
+				            android:paddingLeft="20dp"
+				            android:layout_width="0dp"
+				            android:layout_weight="0.4"
+				            android:layout_height="wrap_content"
+				            android:text="开机时间"
+				            android:textColor="@color/white"
+				            android:textSize="15sp"
+				            />
+				        <TextView
+				            android:id="@+id/time_on"
+				            android:layout_width="0dp"
+				            android:layout_weight="0.6"
+				            android:paddingLeft="10dp"
+				            android:gravity="left|center_vertical"
+				            android:layout_height="wrap_content"
+				            android:text="——"
+				            android:textColor="@color/white"
+				            android:textSize="15sp"
+				            />
+						</LinearLayout>
+						<LinearLayout
+						    android:paddingTop="10dp"
+		                    android:paddingBottom="10dp"
+					        android:layout_height="wrap_content"
+					        android:layout_width="match_parent"
+					        android:gravity="center_vertical"
+					        android:orientation="horizontal">
+					        <TextView
+					            android:paddingLeft="20dp"
+					            android:layout_width="0dp"
+					            android:layout_weight="0.4"
+					            android:layout_height="wrap_content"
+					            android:text="工作时长"
+					            android:textColor="@color/white"
+					            android:textSize="15sp"
+					            />
+					        <TextView
+					            android:id="@+id/time_continue"
+					            android:paddingLeft="10dp"
+					            android:layout_width="0dp"
+					            android:layout_weight="0.6"
+					            android:layout_height="wrap_content"
+					            android:gravity="left|center_vertical"
+					            android:text="——"
+					            android:textColor="@color/white"
+					            android:textSize="15sp"
+					            />
+						</LinearLayout>
+						<LinearLayout
+						    android:paddingTop="10dp"
+		                    android:paddingBottom="10dp"
+					        android:layout_height="wrap_content"
+					        android:layout_width="match_parent"
+					        android:gravity="center_vertical"
+					        android:orientation="horizontal">
+					        <TextView
+					            android:paddingLeft="20dp"
+					            android:layout_width="0dp"
+					            android:layout_weight="0.4"
+					            android:layout_height="wrap_content"
+					            android:text="关机时间"
+					            android:textColor="@color/white"
+					            android:textSize="15sp"
+					            />
+					        <TextView
+					            android:id="@+id/time_off"
+					            android:paddingLeft="10dp"
+					            android:layout_width="0dp"
+					            android:layout_weight="0.6"
+					            android:gravity="left|center_vertical"
+					            android:layout_height="wrap_content"
+					            android:text="——"
+					            android:textColor="@color/white"
+					            android:textSize="15sp"
+					            />
+						</LinearLayout>
+		   
+		   		</LinearLayout>
+ 
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

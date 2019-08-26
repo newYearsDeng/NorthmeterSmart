@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+         android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:alpha="0.8"
+        android:background="@drawable/dialog_corners_white"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:text="标题"
+            />
+         <ImageView
+            android:id="@+id/text_image_1"
+            android:layout_below="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#192E4D"
+            />
+        
+		<ListView
+	        android:id="@+id/listview_dialog"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/text_image_1"
+	        android:layout_above="@+id/text_title_2"
+	        android:background="@color/white"
+	        android:divider="#486695"
+	       	android:dividerHeight="0.5dp"
+	       	android:scrollbarSize="2dp"
+	        android:scrollbarThumbVertical="@color/line_color"
+	        android:listSelector="@android:color/transparent"
+	        android:cacheColorHint="#00000000" >
+   		</ListView>
+   		
+   		<ImageView
+            android:id="@+id/text_image_2"
+            android:layout_below="@+id/listview_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="#192E4D"
+            />
+   		
+		<TextView
+            android:id="@+id/text_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="取消"
+            />
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

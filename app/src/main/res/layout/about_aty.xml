@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/new_back_ground" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/button_back"
+            style="@style/Btn_Back_RelativeLayout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent" >
+		
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_enter"
+            />
+    </RelativeLayout>
+    
+    <LinearLayout
+	    android:id="@+id/user_layout_1"
+	    android:layout_below="@+id/relativeLayout2"
+	    android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="		深圳市北电仪表有限公司于2001年开始筹建，是国内领先的预付费管理专家， 长期以来致力于电能源精细化管理的研究，包含各种用电采集终端、系统以及服务的提供。从电能表以及电测领域同步进展，协助用电管理部门更好地完成收费以及需求侧管理，提供服务质量，改善电网质量；协助用电单位选择更节能的电器，给企业以及单位提供能耗分析；协助电器供应商宣传更节能的设备。北电仪表协助您积极参与智能电网的建设以及节约型社会的建设。让我们共同建设一个更加绿色的地球。 "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+
+	</LinearLayout>
+	
+     <LinearLayout
+	    android:id="@+id/user_layout_3"
+	    android:layout_below="@+id/user_layout_1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:id="@+id/user_layout_2"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="©2017 深圳北电仪表有限公司	"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+
+	</LinearLayout>
+	
+    
+
+   
+
+</RelativeLayout>

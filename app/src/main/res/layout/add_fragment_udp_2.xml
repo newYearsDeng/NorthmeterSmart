@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+ 	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="主站IP地址:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/master_ip"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="主站ip地址"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="主站端口:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/master_port"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="主站端口"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="终端IP地址:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/terminal_ip"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="终端ip"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="子网掩码:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/mask"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="子网掩码"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="网关:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/gateway"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:hint="网关"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="软件版本:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/soft_version"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:focusable="false"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="版本日期:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/version_data"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:focusable="false"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="硬件版本:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/hard_version"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/noselected_white"
+                android:ems="10"
+                android:focusable="false"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+
+    
+    </LinearLayout>
+
+
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center|bottom" >
+
+            <Button
+                android:id="@+id/udp_change_first"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_bg"
+                android:gravity="center"
+                android:text="默认参数"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/udp_next1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_bg"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+     </LinearLayout>
+	</ScrollView>
+</LinearLayout>

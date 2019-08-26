@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_more"
+ 	android:layout_width="230dip"
+ 	android:layout_height="fill_parent"
+ 	android:background="#FFFFFF" >
+ 	<ListView
+		android:id="@+id/more_list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:divider="@drawable/more_sprlit_line"
+		android:fadingEdge="none"
+		android:background="@drawable/blue_titleaty"
+		android:cacheColorHint="@null" />
+	<RelativeLayout
+		android:layout_gravity="bottom" 
+        android:layout_height="wrap_content"
+        android:layout_width="100dip" >
+        <TextView 
+            android:id="@+id/id_compeny"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_above="@+id/id_compeny_net"
+            android:layout_marginBottom="10dp" />
+        
+        <TextView
+            android:id="@+id/id_compeny_net" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="V1.1.0"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" 
+            android:paddingBottom="20dp"/> 
+            <!-- android:autoLink="all" -->
+       </RelativeLayout>
+</FrameLayout>

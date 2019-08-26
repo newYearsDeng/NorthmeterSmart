@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:weightSum="6" >
+ 	<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+       <TextView
+           android:id="@+id/textView_title_2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:text="网络参数设置"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="@color/white" />
+
+       <ImageView
+           android:id="@+id/button_back"
+           style="@style/Btn_Back_RelativeLayout" />
+
+    </RelativeLayout>    
+    
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/active_back"
+            android:gravity="center"
+            android:text="HTTP地址:"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+        
+		<EditText
+            android:id="@+id/edit_http"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/active_back"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+  
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/active_back"
+            android:gravity="center"
+            android:text="MQTT地址:"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+        
+        <EditText
+            android:id="@+id/edit_mqtt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/active_back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/active_back"
+            android:gravity="center"
+            android:text="账户地址:"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+        
+        <EditText
+            android:id="@+id/edit_usreUrl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/active_back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/active_back"
+            android:gravity="center"
+            android:text="SOCKET地址:"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+        
+        <EditText
+            android:id="@+id/edit_tcp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/active_back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="17.0dip" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button_wx_style"
+            android:gravity="center"
+            android:text="确	认"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    
+</LinearLayout>

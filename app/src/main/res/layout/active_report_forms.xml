@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/linear_textout_1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+		<ImageView
+            android:id="@+id/but_back_1"
+            style="@style/Btn_Back_RelativeLayout" />
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用电报表"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="20.0dip" />
+        <TextView
+            android:id="@+id/detailed"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="用电明细"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/line_color">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+	       >
+	    <LinearLayout
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="5dp">
+	        <TextView
+	            android:paddingLeft="10dp"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="能耗分析"
+	            android:textColor="@color/white"
+	            android:textSize="17sp"
+	            />
+		</LinearLayout>
+		
+	
+   
+	
+	<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+		android:focusable="true"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="月用电量"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_dl"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--kWh"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+	<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+         <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可节省电量"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+          <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="(以26℃为理论室温)"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            />
+        <TextView
+           android:id="@+id/textview_kjsdl"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--kWh"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="月使用时长"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_hours"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--h"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+       <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按小时能耗在本楼宇排名"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_ranking"
+           android:layout_width="match_parent"
+           android:text="--"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+	<LinearLayout
+	    android:id="@+id/history_but"
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="打败对手"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_dbds"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+	
+		<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="工作日总用电"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_gzryd"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--kWh"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+		<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作日工作时段总用电"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_gzrgzsd"
+           android:layout_width="match_parent"
+           android:text="--kWh"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+		<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+         <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作日非工作时段总用电"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_gzrfgzsd"
+           android:layout_width="match_parent"
+           android:text="--kWh"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+		<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="非工作日总用电"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_fgzrdl"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--kWh"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+	
+		
+	<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通讯质量分析"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            />
+	</LinearLayout>
+	
+	
+   
+	
+	<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+ 		<TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="在线率"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_online"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+	<LinearLayout
+	    android:background="@drawable/active_back_press_style"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+		android:focusable="true">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="通讯成功率"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            />
+        <TextView
+           android:id="@+id/textview_txcgl"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:text="--"
+           android:gravity="right|center_vertical"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:paddingRight="10dp" />
+	</LinearLayout>
+            
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    
+
+</LinearLayout>

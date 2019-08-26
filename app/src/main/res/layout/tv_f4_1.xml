@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_img_background"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:weightSum="6" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/ydcl"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/ydcl_back"
+            style="@style/Btn_Back_RelativeLayout" />
+
+    </RelativeLayout>
+     
+  	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:orientation="vertical">
+        
+    	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+ 			<TextView
+ 			    android:id="@+id/tv_zhuangtai"
+ 			    android:layout_width="0dp"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_weight="1"
+ 			    android:gravity="left"
+ 			    android:textColor="@color/white" />
+      
+        </LinearLayout>
+
+ 
+    
+    
+         
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical" >  
+            <TextView
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_weight="1"
+ 			    android:gravity="left"
+ 			    android:text="功率控制 "
+ 			    android:textSize="16sp"
+ 			    android:textColor="@color/white"/>   
+ 			 <TextView
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_weight="1"
+ 			    android:gravity="left"
+ 			    android:text="超限1分钟则跳闸"
+ 			    android:textSize="14sp"
+ 			    android:textColor="@color/white" />  
+        </LinearLayout>
+ 
+    
+            <LinearLayout  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >  
+  
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0" >
+  
+                    <TableRow  
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp"     
+                        android:paddingBottom="5.0dip"  
+                        android:paddingTop="5.0dip" >  
+                        
+				            <TextView
+				                android:layout_width="0dp"
+				                android:layout_height="wrap_content"
+				                android:background="@drawable/text_back"
+				                android:layout_weight="0.5"
+				                android:gravity="center"
+				                android:text="功率下限 ( W ):"
+				                android:textSize="16sp"
+				                android:textColor="@color/white"
+				                android:layout_marginLeft="10.5dip"  />          
+		  
+				              <EditText
+				                android:id="@+id/tv_input_1"
+				                android:layout_width="0dp"
+				                android:layout_height="40dp"
+				                android:layout_weight="0.5"		      
+				                android:gravity="center"
+				                android:background="@drawable/text_back"
+				                android:layout_marginLeft="5dp"
+				                android:ems="10"
+				                android:text="0.0"
+				                android:textSize="16sp" 
+				                android:textColor="@color/white"
+				                android:imeOptions="flagNoFullscreen"
+				                android:inputType="textPersonName"
+				                android:layout_marginRight="10.5dip" />
+		            		
+                    </TableRow>  
+  
+		                 <TableRow  
+		                    android:layout_width="fill_parent"    
+		                    android:paddingBottom="5.0dip">  
+		  
+		                <TextView
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:background="@drawable/text_back"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:textSize="16sp"
+			                android:text="功率上限( W ):"
+			                android:textColor="@color/white"
+			                android:layout_marginLeft="10.5dip" /> 
+		                
+		                <EditText
+			                android:id="@+id/tv_input_2"
+			                android:layout_width="0dp"
+			                android:layout_height="40dp"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:background="@drawable/text_back"
+			                android:ems="10"
+			                android:text="0.0"
+			                android:textSize="16sp" 
+			                android:textColor="@color/white"
+			                android:layout_marginLeft="5dp"
+			                android:imeOptions="flagNoFullscreen"
+			                android:inputType="textPersonName"
+			                android:layout_marginRight="10.5dip" >
+		            	</EditText>
+                    </TableRow>  
+  
+                    <TableRow  
+                        android:layout_width="fill_parent"  
+                        android:layout_marginLeft="10.0dip"  
+                        android:layout_marginRight="10.0dip" 
+                        android:background="@drawable/text_back">  
+  
+						<Button
+			                android:id="@+id/tv_button_1"
+			                android:layout_width="0dp"
+			                android:layout_height="40dp"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:background="@drawable/button_press_style"
+			                android:ems="10"
+			                android:text="确定"
+			                android:textColor="@color/white"
+			                android:imeOptions="flagNoFullscreen"
+			                android:inputType="textPersonName"
+			                android:textSize="16sp" />
+                    </TableRow>  
+                </TableLayout>  
+            </LinearLayout>  
+            
+            
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="left"
+                 android:text="电量控制"
+                 android:textColor="@color/white"
+                 android:textSize="16sp" />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="left"
+                 android:text="上限不小于当前电量,超限则跳闸"
+                 android:textColor="@color/white"
+                 android:textSize="14sp" />
+
+            </LinearLayout>
+            
+            <LinearLayout  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >  
+  
+                <TableLayout   
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:paddingLeft="1.0dip"  
+                    android:shrinkColumns="0"  
+                    android:stretchColumns="0" >  
+  
+                    <TableRow   
+                        android:layout_width="fill_parent" 
+                        android:layout_height="40.0dp" 
+                        android:paddingTop="5dp"   
+                        android:paddingBottom="5.0dip"   >  
+                       	<TextView           
+			                android:layout_width="0dp"
+			                android:layout_height="wrap_content"
+			                android:background="@drawable/text_back"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:text="电量上限(kwh):"
+			                android:textSize="16sp" 
+			                android:textColor="@color/white"
+			                android:layout_marginLeft="10.5dip" />
+				           
+		            	 <EditText
+			                android:id="@+id/tv_input_4"
+			                android:layout_width="0dp"
+			                android:layout_height="40dp"
+			                android:layout_weight="0.5"
+			                android:gravity="center"
+			                android:layout_marginLeft="5dp"
+			                android:background="@drawable/text_back"
+			                android:textSize="16sp" 
+			                android:textColor="@color/white"
+			                android:ems="10"
+			                android:text="0.0"
+			                android:imeOptions="flagNoFullscreen"
+			                android:inputType="textPersonName"
+			                android:layout_marginRight="10.0dip" />
+                   	</TableRow>  
+  
+	                <TableRow  
+	                    android:layout_width="fill_parent"  
+	                    android:layout_marginLeft="10.0dip"  
+	                    android:layout_marginRight="10.0dip"  		                    
+	                    android:background="@drawable/text_back" >  
+	                    <Button
+			                android:id="@+id/tv_button_3"
+			                android:layout_width="0dp"
+			                android:layout_height="40dp"
+			                android:layout_weight="0.5"
+			                android:background="@drawable/button_press_style"
+			                android:ems="10"
+			                android:gravity="center"
+			                android:textSize="16sp"
+			                android:textColor="@color/white"
+			                android:imeOptions="flagNoFullscreen"
+			                android:inputType="textPersonName"
+			                android:text="确定" />
+                   	 </TableRow>  
+                </TableLayout>  
+            </LinearLayout> 
+            
+            <LinearLayout  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >    
+                <TableLayout   
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:paddingLeft="1.0dip"
+                    android:layout_marginLeft="10.0dip"  
+		            android:layout_marginRight="10.0dip"   
+                    android:shrinkColumns="0"  
+                    android:stretchColumns="0" > 
+	                <TableRow   
+	                    android:layout_width="fill_parent"  	                    
+	                    android:paddingBottom="15.0dip"  
+	                    android:paddingTop="30.0dip" >   
+	                   	<Button
+				            android:id="@+id/tv_button_4"
+				            android:layout_width="fill_parent"
+				            android:layout_height="40dp"
+				            android:background="@drawable/button_press_style"
+				            android:gravity="center"
+				            android:textSize="16sp"
+				            android:text="电量清零"
+				            android:textColor="@color/white" />
+                   	 </TableRow>  
+                </TableLayout>  
+            </LinearLayout> 
+        
+    </LinearLayout>
+
+</LinearLayout>

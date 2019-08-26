@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+		android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:alpha="0.8"
+        android:background="@drawable/dialog_corners_white"
+        android:gravity="left"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageView_icon"
+            android:text="电量:" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="1dp"
+            android:text="功率:" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="1dp"
+            android:text="空调低速使用时长:" />
+
+        <TextView
+            android:id="@+id/item0"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="10.5kWh" />
+
+        <TextView
+            android:id="@+id/item1"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="0分钟" />
+
+        <TextView
+            android:id="@+id/item5"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textView7"
+            android:text="0度"/>
+
+        <TextView
+            android:id="@+id/item6"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView8"
+            android:layout_alignBottom="@+id/textView8"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textView8"
+            android:text="跳闸" />
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView6"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/item0"
+            android:text="室温:" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:text="空调中速使用时长:" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_alignLeft="@+id/textView7"
+            android:text="状态:" />
+
+        <TextView
+            android:id="@+id/item2"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_marginLeft="10dp"
+            android:text="0分钟"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:text="空调高速使用时长:"/>
+
+        <TextView
+            android:id="@+id/item3"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_marginLeft="10dp"
+            android:text="0分钟" />
+
+        <TextView
+            android:id="@+id/textView_temp_1"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:text="剩余金额:" />
+
+        <TextView
+            android:id="@+id/item_syje"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_temp_1"
+            android:layout_alignBottom="@+id/textView_temp_1"
+            android:layout_alignLeft="@+id/item2"
+            android:text="0元" />
+
+        <TextView
+            android:id="@+id/item4"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item1"
+            android:layout_alignLeft="@+id/item0"
+            android:text="22.0W"/>
+
+        <TextView
+            android:id="@+id/textView_temp_2"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_temp_1"
+            android:layout_below="@+id/textView_temp_1"
+            android:text="风机档位:" />
+
+        <TextView
+            android:id="@+id/item_speed"
+            style="@style/message_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_temp_2"
+            android:layout_alignBottom="@+id/textView_temp_2"
+            android:layout_alignLeft="@+id/item_syje"
+            android:text="一级" />
+
+    </RelativeLayout>
+
+</LinearLayout>

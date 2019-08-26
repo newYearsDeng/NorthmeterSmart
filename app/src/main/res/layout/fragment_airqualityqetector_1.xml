@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   
+    <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbarSize="2dp"
+       android:scrollbarThumbVertical="@color/line_color">
+       
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+		    <RelativeLayout
+		        android:id="@+id/relativeLayout1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center" >
+		
+		        <LinearLayout
+		            android:id="@+id/layout_dialog"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerHorizontal="true"
+		            android:background="@drawable/air_center_inf"
+		            android:gravity="center_horizontal|center"
+		            android:orientation="vertical" >
+		            
+		            <LinearLayout 
+			     	    android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="center_horizontal"
+				        android:orientation="horizontal">
+			     	     <TextView
+				            android:id="@+id/text_pm2_5"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_marginLeft="2dp"
+				            android:layout_marginRight="2dp"
+				            android:gravity="center"
+				            android:textColor="@color/white"
+				            android:textSize="21sp"
+				            android:text="--ug/m3" />
+			     	</LinearLayout>
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_horizontal"
+		                android:orientation="horizontal" >
+		
+		                <TextView
+		                    android:id="@+id/textView2_air"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignTop="@+id/imageView_icon"
+		                    android:layout_marginLeft="15dp"
+		                    android:layout_toRightOf="@+id/imageView_icon"
+		                    android:text="PM2.5"
+		                    android:textColor="#FFFFFF" />
+		
+		                <TextView
+		                    android:id="@+id/text_pm2_5_"
+		                    style="@style/message_texts"
+		                    android:visibility="gone"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignTop="@+id/textView2_air"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_toRightOf="@+id/textView2_air"
+		                    android:text="--ug/m3"
+		                    android:textColor="#FFFFFF" />
+		            </LinearLayout>
+		            
+			        
+		            <View
+			            android:id="@+id/air_view_show"
+			            android:layout_width="fill_parent"
+			            android:layout_height="1dp"
+			            android:layout_marginLeft="30dp"
+			            android:layout_marginRight="30dp"
+			            android:alpha="0.5"
+			            android:background="@color/white"/>
+		            <LinearLayout
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:gravity="center"
+		                android:orientation="horizontal" >
+		
+		                <TextView
+		                    android:id="@+id/textview_socket"
+		                    style="@style/message_texts"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_alignTop="@+id/imageView_icon"
+		                    android:layout_toRightOf="@+id/imageView_icon"
+		                    android:text="通讯网络:"
+		                    android:textColor="#FFFFFF" />
+		
+		                <ImageView
+				            android:id="@+id/image_socket"
+				            style="@style/message_texts"
+				            android:layout_width="wrap_content"
+				            android:layout_marginLeft="5dp"
+				            android:scaleType="fitStart"
+				            android:layout_height="wrap_content"
+				            android:src="@drawable/signal_0"
+				            android:layout_toRightOf="@+id/textView2_socket"/>
+		            </LinearLayout>
+ 
+		        </LinearLayout>
+		
+		        
+		    	<CheckBox
+			        android:id="@+id/checkbox1"
+			        android:layout_below="@+id/layout_dialog"
+			        android:layout_alignLeft="@+id/layout_dialog"
+			        android:layout_marginTop="10dp"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:background="@drawable/checkbox_new_thz_style"
+			        android:button="@null"
+			        android:text="@null" />
+		
+		    	<ImageView
+		    	    android:id="@+id/img_refresh"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_below="@+id/layout_dialog"
+		    	    android:layout_alignRight="@+id/layout_dialog"
+		    	    android:layout_marginTop="12dp"
+		    	    android:src="@drawable/socket_refresh_style" />
+		
+		    </RelativeLayout>
+		    	    
+		    
+		    <LinearLayout
+		        android:id="@+id/linear_action_1"
+		        android:layout_marginTop="20dp"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:paddingLeft="10dp"
+			    android:paddingRight="10dp"
+		        android:orientation="horizontal">
+		  		 <LinearLayout
+		  		    android:paddingTop="10dp"
+	                android:paddingBottom="10dp"
+			        android:layout_height="wrap_content"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+			        android:gravity="center_horizontal"
+			        android:orientation="vertical">
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_weight="0.4"
+			            android:layout_height="0dp"
+			            android:text="温度"
+			            android:textColor="@color/white"
+			            android:textSize="15sp"
+			            />
+			        <TextView
+			            android:id="@+id/text_temputer"
+			            android:layout_width="wrap_content"
+			            android:layout_weight="0.6"
+			            android:gravity="left|center_vertical"
+			            android:layout_height="0dp"
+			            android:text="——"
+			            android:textColor="@color/white"
+			            android:textSize="15sp"
+			            />
+					</LinearLayout>
+					<LinearLayout
+					    android:paddingTop="10dp"
+	                    android:paddingBottom="10dp"
+				        android:layout_height="wrap_content"
+			       		android:layout_width="0dp"
+			        	android:layout_weight="1"
+				        android:gravity="center_horizontal"
+				        android:orientation="vertical">
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_weight="0.4"
+				            android:layout_height="0dp"
+				            android:text="湿度"
+				            android:textColor="@color/white"
+				            android:textSize="15sp"
+				            />
+				        <TextView
+				            android:id="@+id/text_wet"
+				            android:layout_width="wrap_content"
+				            android:layout_weight="0.6"
+				            android:layout_height="0dp"
+				            android:gravity="left|center_vertical"
+				            android:text="——"
+				            android:textColor="@color/white"
+				            android:textSize="15sp"
+				            />
+					</LinearLayout>
+
+					<LinearLayout
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="center_horizontal"
+					    android:orientation="vertical"
+					    android:paddingBottom="10dp"
+					    android:paddingTop="10dp" >
+
+					    <TextView
+					        android:layout_width="wrap_content"
+					        android:layout_height="0dp"
+					        android:layout_weight="0.4"
+					        android:text="甲醛"
+					        android:textColor="@color/white"
+					        android:textSize="15sp" />
+
+					    <TextView
+					        android:id="@+id/text_jq"
+					        android:layout_width="wrap_content"
+					        android:layout_height="0dp"
+					        android:layout_weight="0.6"
+					        android:gravity="left|center_vertical"
+					        android:text="——"
+					        android:textColor="@color/white"
+					        android:textSize="15sp" />
+					</LinearLayout>
+
+		   	</LinearLayout>
+		   	
+		    <LinearLayout
+		        android:id="@+id/linear_action_2"
+		        android:layout_marginTop="10dp"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:paddingLeft="10dp"
+			    android:paddingRight="10dp"
+		        android:orientation="horizontal">
+		  		 <LinearLayout
+		  		    android:paddingTop="10dp"
+	                android:paddingBottom="10dp"
+			        android:layout_height="wrap_content"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+			        android:gravity="center_horizontal"
+			        android:orientation="vertical">
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_weight="0.4"
+			            android:layout_height="0dp"
+			            android:text="PM1.0"
+			            android:textColor="@color/white"
+			            android:textSize="15sp"
+			            />
+			        <TextView
+			            android:id="@+id/text_pm1_0"
+			            android:layout_width="wrap_content"
+			            android:layout_weight="0.6"
+			            android:gravity="left|center_vertical"
+			            android:layout_height="0dp"
+			            android:text="——"
+			            android:textColor="@color/white"
+			            android:textSize="15sp"
+			            />
+					</LinearLayout>
+					<LinearLayout
+					    android:paddingTop="10dp"
+	                    android:paddingBottom="10dp"
+				        android:layout_height="wrap_content"
+			       		android:layout_width="0dp"
+			        	android:layout_weight="1"
+				        android:gravity="center_horizontal"
+				        android:orientation="vertical">
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_weight="0.4"
+				            android:layout_height="0dp"
+				            android:text="PM10"
+				            android:textColor="@color/white"
+				            android:textSize="15sp"
+				            />
+				        <TextView
+				            android:id="@+id/text_pm10"
+				            android:layout_width="wrap_content"
+				            android:layout_weight="0.6"
+				            android:layout_height="0dp"
+				            android:gravity="left|center_vertical"
+				            android:text="——"
+				            android:textColor="@color/white"
+				            android:textSize="15sp"
+				            />
+					</LinearLayout>
+
+					<LinearLayout
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="center_horizontal"
+					    android:orientation="vertical"
+					    android:paddingBottom="10dp"
+					    android:paddingTop="10dp" >
+
+					    <TextView
+					        android:layout_width="wrap_content"
+					        android:layout_height="0dp"
+					        android:layout_weight="0.4"
+					        android:text="CO2"
+					        android:textColor="@color/white"
+					        android:textSize="15sp" />
+
+					    <TextView
+					        android:id="@+id/text_co2"
+					        android:layout_width="wrap_content"
+					        android:layout_height="0dp"
+					        android:layout_weight="0.6"
+					        android:gravity="left|center_vertical"
+					        android:text="——"
+					        android:textColor="@color/white"
+					        android:textSize="15sp" />
+					</LinearLayout>
+
+		   	</LinearLayout>
+ 
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

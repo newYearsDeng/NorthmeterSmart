@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+		     <Button
+		        android:id="@+id/btn1"
+		        style="@style/f1_p1_btn"
+		        android:text="@string/f1p1_t5" />
+		     
+		    <Button
+		        android:id="@+id/btn2"
+		        style="@style/f1_p1_btn"
+		        android:text="@string/f1p1_t3" />
+		    
+		    <Button
+		        android:id="@+id/btn3"
+		        style="@style/f1_p1_btn"
+		        android:text="@string/f1p1_t3_1" />
+		
+		    <Button
+		        android:id="@+id/btn4"
+		        style="@style/f1_p1_btn"
+		        android:text="分体空调控制器" />
+		    
+		    <Button
+		        android:id="@+id/btn5"
+		        style="@style/f1_p1_btn"
+		        android:text="中央空调控制器" />
+    		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

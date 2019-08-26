@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 获得焦点时的图片背景 -->
+    <item android:state_focused="true"><shape>
+        	<solid android:color="#192E4D" />     
+            <corners android:topLeftRadius="10dp"     
+             android:topRightRadius="10dp"      
+             android:bottomRightRadius="10dp"     
+             android:bottomLeftRadius="10dp"/>
+        </shape></item>
+
+    <!-- 触摸模式下单击时的背景图片 -->
+    <item android:state_focused="false" android:state_pressed="true" ><shape>
+        	<solid android:color="#192E4D" />     
+            <corners android:topLeftRadius="10dp"     
+             android:topRightRadius="10dp"      
+             android:bottomRightRadius="10dp"     
+             android:bottomLeftRadius="10dp"/>
+        </shape></item>
+    <!-- 默认时的背景图片 -->
+    <item><shape>
+        	<solid android:color="#192E4D" />     
+            <corners android:topLeftRadius="10dp"     
+             android:topRightRadius="10dp"      
+             android:bottomRightRadius="10dp"     
+             android:bottomLeftRadius="10dp"/>
+        </shape></item>
+</selector>

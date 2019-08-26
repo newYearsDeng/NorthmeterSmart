@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/new_img_background"
+    android:orientation="vertical" >
+     
+ 	<RelativeLayout
+	        android:id="@+id/relativeLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设置"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/button_back"
+            style="@style/Btn_Back_RelativeLayout" />
+
+    </RelativeLayout>
+ 
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="设备类型:"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_type"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/text_back"
+                android:textSize="15sp"
+                android:textColor="@color/lightgray"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/select_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:focusable="true"  
+       	    android:focusableInTouchMode="true"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="设备名字:"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+            
+            <EditText
+                android:id="@+id/edittext_name"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/text_back"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:gravity="center"
+            android:paddingLeft="20dp" 
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="设备ID:"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_deviceid"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/text_back"
+                android:textSize="15sp"
+                android:textColor="@color/lightgray"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:gravity="center"
+            android:paddingLeft="20dp" 
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="建筑ID:"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/edittext_buildid"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/text_back"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:background="@drawable/text_back"
+            android:gravity="center"
+            android:paddingLeft="20dp" 
+            android:paddingRight="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="能源类型:"
+                android:textSize="15sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_energyid"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:text="ac"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/text_back"
+                android:textSize="15sp"
+                android:textColor="@color/lightgray"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+        
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button_change"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_press_style"
+            android:gravity="center"
+            android:text="确认修改"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

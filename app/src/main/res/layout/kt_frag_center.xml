@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	     	<ImageView
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_refresh_style" />
+	     </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_dialog"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal|center"
+	        android:orientation="vertical"
+	        android:background="@drawable/air_center_inf" >
+
+	        
+	        <LinearLayout 
+	     	    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:orientation="horizontal">
+	     	     <TextView
+		            android:id="@+id/item_temp_center"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="2dp"
+		            android:layout_marginRight="2dp"
+		            android:gravity="center"
+		            android:textColor="@color/white"
+		            android:textSize="40sp"
+		            android:text="24" />
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="2dp"
+		            android:layout_marginRight="2dp"
+		            android:gravity="center"
+		            android:textColor="@color/white"
+		            android:textSize="40sp"
+		            android:text="℃" />
+	     	</LinearLayout>
+	        
+	     	<LinearLayout 
+	     	    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:orientation="horizontal">
+	     	     <TextView
+		            android:id="@+id/textView_temp_1_1"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_above="@+id/textView4"
+		            android:layout_toLeftOf="@+id/item5"
+		            android:text="设定温度:"
+		            android:textColor="@color/white" />
+
+		        <TextView
+		            android:id="@+id/txt_temp"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignTop="@+id/textView_temp_1_1"
+		            android:layout_marginLeft="5dp"
+		            android:layout_toRightOf="@+id/textView_temp_1_1"
+		            android:text="--"
+		            android:textColor="@color/white" />
+		        <TextView
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignTop="@+id/textView_temp_1_1"
+		            android:layout_marginLeft="5dp"
+		            android:layout_toRightOf="@+id/textView_temp_1_1"
+		            android:text="℃"
+		            android:textColor="@color/white" />
+	     	</LinearLayout>
+	        
+	        <View
+	            android:id="@+id/air_view_show"
+	            android:layout_width="fill_parent"
+	            android:layout_height="1dp"
+	            android:layout_marginLeft="30dp"
+	            android:layout_marginRight="30dp"
+	            android:alpha="0.5"
+	            android:background="@color/white"/>
+	        
+	        
+	     	
+	        <LinearLayout 
+	     	    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:orientation="horizontal">
+	     	     <TextView
+		            android:id="@+id/textView3_air"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignLeft="@+id/textView6"
+		            android:layout_below="@+id/textView6"
+		            android:layout_marginTop="1dp"
+		            android:gravity="center"
+		            android:text="功率:"
+		            android:textColor="@color/white" />
+
+		        <TextView
+		            android:id="@+id/item1_air"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@+id/textView3_air"
+		            android:layout_alignBottom="@+id/textView3_air"
+		            android:layout_marginLeft="5dp"
+		            android:layout_toRightOf="@+id/textView3_air"
+		            android:gravity="center"
+		            android:text="--"
+		            android:textColor="@color/white" />
+	     	</LinearLayout>
+	     	<LinearLayout 
+	     	    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:orientation="horizontal">
+	     	 <TextView
+		            android:id="@+id/textView5_1"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="1dp"
+		            android:gravity="center"
+		            android:text="状态:"
+		            android:textColor="#FFFFFF" />
+	     	 <TextView
+		            android:id="@+id/item3_air"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignLeft="@+id/item2"
+		            android:layout_marginLeft="10dp"
+		            android:gravity="center"
+		            android:text="--"
+		            android:textColor="@color/white" />
+	     	</LinearLayout>
+	     	<LinearLayout 
+	     	    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:orientation="horizontal">
+	     	     <TextView
+		            android:id="@+id/textview2_air"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignTop="@+id/imageView_icon"
+		            android:layout_toRightOf="@+id/imageView_icon"
+		            android:gravity="center"
+		            android:text="网络:"
+		            android:textColor="@color/white" />
+
+		         <ImageView
+		            android:id="@+id/image0_air"
+		            style="@style/message_texts"
+		            android:layout_width="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:scaleType="fitStart"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/signal_0"
+		            android:layout_toRightOf="@+id/textView2_air"/>
+	     	</LinearLayout>
+	        
+		</LinearLayout>
+		
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center"
+	        android:orientation="vertical" >
+	     	<ImageView
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_refresh_style" />
+	     </LinearLayout>
+    </LinearLayout>
+    
+   
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        
+			<ImageView
+                android:id="@+id/imageview_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/temp_down_style" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+            
+            <ImageView
+                android:id="@+id/imageview_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/temp_up_style" />
+
+        </LinearLayout>
+    
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/new_air_off" />
+            
+           
+            
+             <ImageView
+                android:id="@+id/img_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:scaleType="fitCenter"
+                android:src="@drawable/air_send_style" />
+             
+             <ImageView
+                android:id="@+id/img_refresh"
+                android:layout_marginTop="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_refresh_style" />
+        </LinearLayout>
+    
+   
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        <ImageView
+                android:id="@+id/img_speed_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/air_speed_difeng_p" />
+        <ImageView
+                android:id="@+id/img_speed_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/air_speed_zhongfeng_p" />
+        <ImageView
+                android:id="@+id/img_speed_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/air_speed_gaofeng_p" />
+        <ImageView
+                android:id="@+id/img_speed_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/air_self_p" />
+	</LinearLayout>
+
+</LinearLayout>

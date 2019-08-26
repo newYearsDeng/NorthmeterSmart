@@ -1,0 +1,13 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListView
+        android:id="@+id/listview_val"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#CECECE"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:listSelector="#FFFFFF" >
+    </ListView>
+
+</merge>
